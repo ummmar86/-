@@ -1,0 +1,27 @@
+<map id="AuthRegForm::on_loginButton_clicked" name="AuthRegForm::on_loginButton_clicked">
+<area shape="rect" id="Node000001" title="Отправляет &quot;auth &lt;login&gt; &lt;password&gt;&quot;; при SUCCESS открывает MainForm (REQ&#45;AUTH&#45;1, 2)." alt="" coords="5,212,221,252"/>
+<area shape="rect" id="Node000002" href="$classClientController.html#aa60aab2ff47519db6ad3a5e19036d919" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="271,77,479,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,210,196,169,268,126,319,104,321,109,271,130,199,173,142,214"/>
+<area shape="rect" id="Node000005" href="$classMyTcpClient.html#a143ec9ab83b5359f6b9a59724e73a4eb" title="Возвращает единственный экземпляр, создавая его (и подключение) при первом вызове." alt="" coords="282,141,467,166"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,209,269,175,299,167,301,172,270,180,168,214"/>
+<area shape="rect" id="Node000010" href="$classMyTcpClient.html#ad7514081767c5f505184aa859e3d897c" title="Синхронно ждёт и читает ответ сервера." alt="" coords="296,190,453,215"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="221,217,282,210,283,216,222,223"/>
+<area shape="rect" id="Node000011" href="$classClientController.html#adb91f0c985ca9a72a2fea035e54ae7ee" title="Команда входа." alt="" coords="273,240,476,280"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="222,241,260,245,259,250,221,246"/>
+<area shape="rect" id="Node000012" href="$classClientController.html#a56ae73d86689189ba961a7275346418c" title="Переводит ответ сервера в статус для формы." alt="" coords="269,304,480,344"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="165,250,270,289,293,297,291,302,268,295,163,255"/>
+<area shape="rect" id="Node000013" href="$classMyTcpClient.html#af8f66258fe73d002da2211d46cb72929" title="Отправляет команду серверу в кодировке UTF&#45;8." alt="" coords="275,369,474,394"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="136,250,193,302,230,330,271,354,291,362,289,367,268,358,228,335,190,307,132,254"/>
+<area shape="rect" id="Node000003" href="$classClientController.html#ac28cc17dda067772d7ffe094943e0b9d" title=" " alt="" coords="537,5,707,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,74,530,46,532,51,426,79"/>
+<area shape="rect" id="Node000004" href="$classClientControllerDestroyer.html#a5c347716bcaaa52fca6f7fb4de48fd0f" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="528,69,716,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="479,87,515,87,515,92,479,92"/>
+<area shape="rect" id="Node000006" href="$classMyTcpClientDestroyer.html#aebda830286d0c82f769384d376f45591" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="539,133,705,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="467,151,525,151,525,156,467,156"/>
+<area shape="rect" id="Node000007" href="$classMyTcpClient.html#a7cb5a6586428ba70b9bdc69f87692a34" title="Создаёт сокет и подключается к серверу." alt="" coords="528,198,716,223"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="432,164,481,175,554,192,553,197,479,180,431,169"/>
+<area shape="rect" id="Node000008" href="$classMyTcpClient.html#a7355dce00c2abc6725ef543fb9677b2d" title="Соединение с сервером установлено." alt="" coords="773,173,949,198"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="716,198,759,193,760,199,716,203"/>
+<area shape="rect" id="Node000009" href="$classMyTcpClient.html#a6185dc550090b6526943673d28a71454" title="Соединение с сервером разорвано." alt="" coords="764,222,959,247"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="716,217,751,221,750,226,716,223"/>
+</map>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MathEquationSolver: Исходный файл MathClient/clientcontroller.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MathEquationSolver<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Решение нелинейных уравнений: клиент-сервер на Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('clientcontroller_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">clientcontroller.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="clientcontroller_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="clientcontroller_8h.html">clientcontroller.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><a class="code hl_class" href="class_client_controller.html">ClientController</a>* <a class="code hl_variable" href="class_client_controller.html#ad5749caf508378a667e69f747912e25b">ClientController::instance</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><a class="code hl_class" href="class_client_controller_destroyer.html">ClientControllerDestroyer</a> <a class="code hl_variable" href="class_client_controller.html#a93a5e59ef8f096819e80432c656750b6">ClientController::destroyer</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_client_controller_destroyer.html#a9f86a7c636beddc40e298639211e30db">    6</a></span><a class="code hl_function" href="class_client_controller_destroyer.html#a9f86a7c636beddc40e298639211e30db">ClientControllerDestroyer::~ClientControllerDestroyer</a>() { <span class="keyword">delete</span> <a class="code hl_variable" href="class_client_controller_destroyer.html#a9600d3425a8fd3281849d423b8369b55">instance</a>; }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_client_controller.html#adb91f0c985ca9a72a2fea035e54ae7ee">    8</a></span>QString <a class="code hl_function" href="class_client_controller.html#adb91f0c985ca9a72a2fea035e54ae7ee">ClientController::makeLoginCommand</a>(QString login, QString password) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;auth %1 %2&quot;</span>).arg(login).arg(password);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_client_controller.html#a74049e02a00378b07184357cb2434cb7">   12</a></span>QString <a class="code hl_function" href="class_client_controller.html#a74049e02a00378b07184357cb2434cb7">ClientController::makeRegisterCommand</a>(QString login, QString password) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;reg %1 %2&quot;</span>).arg(login).arg(password);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_client_controller.html#a56a6edfed277764b31da6e38e8da2fbc">   16</a></span>QString <a class="code hl_function" href="class_client_controller.html#a56a6edfed277764b31da6e38e8da2fbc">ClientController::makeSolveTaskCommand</a>(<span class="keywordtype">int</span> functionId, <span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> eps) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;solve %1 %2 %3 %4&quot;</span>).arg(functionId).arg(a).arg(b).arg(eps);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_client_controller.html#a529fb42541027e68c35939788436d99b">   20</a></span>QString <a class="code hl_function" href="class_client_controller.html#a529fb42541027e68c35939788436d99b">ClientController::makeNewtonStepCommand</a>(<span class="keywordtype">int</span> functionId, <span class="keywordtype">double</span> x0, <span class="keywordtype">double</span> dfx0) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;step %1 %2 %3&quot;</span>).arg(functionId).arg(x0).arg(dfx0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_client_controller.html#a1b8a624316f661a44e78ac61b423d393">   24</a></span>QString <a class="code hl_function" href="class_client_controller.html#a529fb42541027e68c35939788436d99b">ClientController::makeNewtonStepCommand</a>(<span class="keywordtype">int</span> functionId, <span class="keywordtype">double</span> x0) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;step %1 %2&quot;</span>).arg(functionId).arg(x0);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_client_controller.html#a56ae73d86689189ba961a7275346418c">   28</a></span>QString <a class="code hl_function" href="class_client_controller.html#a56ae73d86689189ba961a7275346418c">ClientController::parseServerResponse</a>(QString response) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (response.contains(<span class="stringliteral">&quot;успешно&quot;</span>) || response.contains(<span class="stringliteral">&quot;success&quot;</span>)) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;SUCCESS&quot;</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (response.contains(<span class="stringliteral">&quot;не удалась&quot;</span>) || response.contains(<span class="stringliteral">&quot;failed&quot;</span>)) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;FAILED&quot;</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">if</span> (response == <span class="stringliteral">&quot;ALREADY_EXISTS&quot;</span>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;ALREADY_EXISTS&quot;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> response;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+</div>
+<div class="ttc" id="aclass_client_controller_destroyer_html"><div class="ttname"><a href="class_client_controller_destroyer.html">ClientControllerDestroyer</a></div><div class="ttdoc">Удаляет синглтон ClientController при завершении программы.</div><div class="ttdef"><b>Определения</b> <a href="clientcontroller_8h_source.html#l00016">clientcontroller.h:17</a></div></div>
+<div class="ttc" id="aclass_client_controller_destroyer_html_a9600d3425a8fd3281849d423b8369b55"><div class="ttname"><a href="class_client_controller_destroyer.html#a9600d3425a8fd3281849d423b8369b55">ClientControllerDestroyer::instance</a></div><div class="ttdeci">ClientController * instance</div><div class="ttdoc">Указатель на удаляемый экземпляр.</div><div class="ttdef"><b>Определения</b> <a href="clientcontroller_8h_source.html#l00019">clientcontroller.h:19</a></div></div>
+<div class="ttc" id="aclass_client_controller_destroyer_html_a9f86a7c636beddc40e298639211e30db"><div class="ttname"><a href="class_client_controller_destroyer.html#a9f86a7c636beddc40e298639211e30db">ClientControllerDestroyer::~ClientControllerDestroyer</a></div><div class="ttdeci">~ClientControllerDestroyer()</div><div class="ttdoc">Удаляет экземпляр ClientController.</div><div class="ttdef"><b>Определения</b> <a href="#l00006">clientcontroller.cpp:6</a></div></div>
+<div class="ttc" id="aclass_client_controller_html"><div class="ttname"><a href="class_client_controller.html">ClientController</a></div><div class="ttdoc">Логика клиента без интерфейса и сети (паттерн «Одиночка»).</div><div class="ttdef"><b>Определения</b> <a href="clientcontroller_8h_source.html#l00033">clientcontroller.h:34</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_a529fb42541027e68c35939788436d99b"><div class="ttname"><a href="class_client_controller.html#a529fb42541027e68c35939788436d99b">ClientController::makeNewtonStepCommand</a></div><div class="ttdeci">QString makeNewtonStepCommand(int functionId, double x0, double dfx0)</div><div class="ttdoc">Команда одного шага метода Ньютона с заданной производной.</div><div class="ttdef"><b>Определения</b> <a href="#l00020">clientcontroller.cpp:20</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_a56a6edfed277764b31da6e38e8da2fbc"><div class="ttname"><a href="class_client_controller.html#a56a6edfed277764b31da6e38e8da2fbc">ClientController::makeSolveTaskCommand</a></div><div class="ttdeci">QString makeSolveTaskCommand(int functionId, double a, double b, double eps)</div><div class="ttdoc">Команда решения уравнения.</div><div class="ttdef"><b>Определения</b> <a href="#l00016">clientcontroller.cpp:16</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_a56ae73d86689189ba961a7275346418c"><div class="ttname"><a href="class_client_controller.html#a56ae73d86689189ba961a7275346418c">ClientController::parseServerResponse</a></div><div class="ttdeci">QString parseServerResponse(QString response)</div><div class="ttdoc">Переводит ответ сервера в статус для формы.</div><div class="ttdef"><b>Определения</b> <a href="#l00028">clientcontroller.cpp:28</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_a74049e02a00378b07184357cb2434cb7"><div class="ttname"><a href="class_client_controller.html#a74049e02a00378b07184357cb2434cb7">ClientController::makeRegisterCommand</a></div><div class="ttdeci">QString makeRegisterCommand(QString login, QString password)</div><div class="ttdoc">Команда регистрации.</div><div class="ttdef"><b>Определения</b> <a href="#l00012">clientcontroller.cpp:12</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_a93a5e59ef8f096819e80432c656750b6"><div class="ttname"><a href="class_client_controller.html#a93a5e59ef8f096819e80432c656750b6">ClientController::destroyer</a></div><div class="ttdeci">static ClientControllerDestroyer destroyer</div><div class="ttdoc">Удаляет экземпляр при выходе.</div><div class="ttdef"><b>Определения</b> <a href="clientcontroller_8h_source.html#l00038">clientcontroller.h:38</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_ad5749caf508378a667e69f747912e25b"><div class="ttname"><a href="class_client_controller.html#ad5749caf508378a667e69f747912e25b">ClientController::instance</a></div><div class="ttdeci">static ClientController * instance</div><div class="ttdoc">Единственный экземпляр.</div><div class="ttdef"><b>Определения</b> <a href="clientcontroller_8h_source.html#l00037">clientcontroller.h:37</a></div></div>
+<div class="ttc" id="aclass_client_controller_html_adb91f0c985ca9a72a2fea035e54ae7ee"><div class="ttname"><a href="class_client_controller.html#adb91f0c985ca9a72a2fea035e54ae7ee">ClientController::makeLoginCommand</a></div><div class="ttdeci">QString makeLoginCommand(QString login, QString password)</div><div class="ttdoc">Команда входа.</div><div class="ttdef"><b>Определения</b> <a href="#l00008">clientcontroller.cpp:8</a></div></div>
+<div class="ttc" id="aclientcontroller_8h_html"><div class="ttname"><a href="clientcontroller_8h.html">clientcontroller.h</a></div><div class="ttdoc">Формирование команд для сервера и разбор его ответов (клиент).</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_faba761e6863ae82541675b50672ff35.html">MathClient</a></li><li class="navelem"><a href="clientcontroller_8cpp.html">clientcontroller.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="Database::createTables" name="Database::createTables">
+<area shape="rect" id="Node000001" title="Создаёт таблицы Users и History, если их ещё нет." alt="" coords="312,5,487,31"/>
+<area shape="rect" id="Node000002" href="$classCommandParsing.html#a534a09c388a104b059071f8298e4c646" title="Открывает mathserver.db и создаёт таблицы." alt="" coords="5,5,264,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,21,264,21,264,15,298,15"/>
+</map>

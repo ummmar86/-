@@ -1,0 +1,11 @@
+<map id="MathClient/mainform.h" name="MathClient/mainform.h">
+<area shape="rect" id="Node000001" title="Главное окно клиента: выбор уравнения, ввод параметров, результаты." alt="" coords="208,5,361,32"/>
+<area shape="rect" id="Node000002" href="$authregform_8h.html" title="Окно входа и регистрации (стартовое окно клиента)." alt="" coords="104,80,273,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,40,207,82,204,77,254,43"/>
+<area shape="rect" id="Node000005" href="$mainform_8cpp.html" title=" " alt="" coords="297,80,464,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="314,39,367,80,361,80,312,44"/>
+<area shape="rect" id="Node000003" href="$authregform_8cpp.html" title=" " alt="" coords="5,155,188,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,116,114,157,111,152,158,117"/>
+<area shape="rect" id="Node000004" href="$_math_client_2main_8cpp.html" title=" " alt="" coords="211,155,352,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,114,268,154,263,154,216,119"/>
+</map>

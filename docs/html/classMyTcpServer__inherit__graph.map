@@ -1,0 +1,5 @@
+<map id="MyTcpServer" name="MyTcpServer">
+<area shape="rect" id="Node000001" title="Принимает подключения клиентов на порту 33333 и отвечает на их команды." alt="" coords="5,119,195,304"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,5,133,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,85,103,119,97,119,97,85"/>
+</map>

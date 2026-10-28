@@ -1,0 +1,7 @@
+<map id="MyTcpServer::slotServerRead" name="MyTcpServer::slotServerRead">
+<area shape="rect" id="Node000001" title="Читает команду клиента, выполняет её и отправляет ответ." alt="" coords="505,5,701,32"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc" title="Принимает новые подключения и подписывается на их сигналы." alt="" coords="237,5,457,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,19,458,21,457,16,492,19"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4" title="Создаёт сервер и начинает слушать порт 33333 на всех интерфейсах." alt="" coords="5,5,189,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,19,189,21,189,16,224,19"/>
+</map>

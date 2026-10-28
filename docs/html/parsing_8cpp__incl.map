@@ -1,0 +1,26 @@
+<map id="MathServer/parsing.cpp" name="MathServer/parsing.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="248,5,424,31"/>
+<area shape="rect" id="Node000002" href="$parsing_8h.html" title="Разбор текстовых команд клиента на сервере." alt="" coords="183,79,265,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,33,256,73,253,69,317,28"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="289,79,383,104"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="339,31,339,65,333,65,333,31"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="407,79,481,104"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="355,28,416,69,413,73,352,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,225,80,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,107,70,219,66,214,208,102"/>
+<area shape="rect" id="Node000004" href="$database_8h.html" title="Работа с базой данных SQLite (пользователи и история вычислений)." alt="" coords="177,152,271,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="227,104,227,138,221,138,221,104"/>
+<area shape="rect" id="Node000008" href="$mathsolver_8h.html" title="Численные методы поиска корней нелинейных уравнений (сервер)." alt="" coords="447,152,553,177"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="267,101,443,146,442,151,265,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="196,180,86,223,84,218,194,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="104,225,219,251"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="216,179,183,217,179,213,212,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="243,225,333,251"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="237,176,271,213,267,217,233,179"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="357,225,440,251"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="253,175,358,218,356,222,251,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="465,225,535,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="503,178,503,212,497,212,497,178"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="559,225,646,251"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="518,175,576,215,573,219,515,180"/>
+</map>

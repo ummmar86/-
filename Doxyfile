@@ -1,0 +1,47 @@
+# Конфигурация Doxygen для MathEquationSolver.
+# Генерация:  doxygen Doxyfile
+# Результат:  docs/doxygen/html/index.html
+# Для графов классов нужен Graphviz (команда dot).
+# Параметры, которых здесь нет, берутся по умолчанию.
+
+PROJECT_NAME           = "MathEquationSolver"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Решение нелинейных уравнений: клиент-сервер на Qt"
+OUTPUT_DIRECTORY       = docs/doxygen
+OUTPUT_LANGUAGE        = Russian
+INPUT_ENCODING         = UTF-8
+
+INPUT                  = docs/mainpage.md MathServer MathClient
+FILE_PATTERNS          = *.h *.cpp *.md
+RECURSIVE              = NO
+# В MathClient лежит неиспользуемая копия mathsolver (её нет в MathClient.pro)
+EXCLUDE                = MathClient/mathsolver.h MathClient/mathsolver.cpp
+EXCLUDE_PATTERNS       = */moc_* */ui_*
+USE_MDFILE_AS_MAINPAGE = docs/mainpage.md
+IMAGE_PATH             = docs/diagrams
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+JAVADOC_AUTOBRIEF      = YES
+SOURCE_BROWSER         = YES
+GENERATE_BUGLIST       = YES
+
+GENERATE_HTML          = YES
+GENERATE_TREEVIEW      = YES
+GENERATE_LATEX         = NO
+
+HAVE_DOT               = YES
+UML_LOOK               = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_LOGFILE           = docs/doxygen/warnings.log

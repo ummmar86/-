@@ -1,0 +1,13 @@
+services:
+  mathserver:
+    build: .
+    image: mathserver:latest
+    container_name: mathserver
+    ports:
+      - "33333:33333"
+    volumes:
+      - mathserver-data:/data
+    restart: unless-stopped
+
+volumes:
+  mathserver-data:

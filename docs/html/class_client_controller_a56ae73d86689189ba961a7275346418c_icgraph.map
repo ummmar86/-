@@ -1,0 +1,7 @@
+<map id="ClientController::parseServerResponse" name="ClientController::parseServerResponse">
+<area shape="rect" id="Node000001" title="Переводит ответ сервера в статус для формы." alt="" coords="250,39,439,81"/>
+<area shape="rect" id="Node000002" href="$class_auth_reg_form.html#af45f68e46fbb15a47c230705935ac141" title="Отправляет &quot;auth &lt;login&gt; &lt;password&gt;&quot;; при SUCCESS открывает MainForm (REQ&#45;AUTH&#45;1, 2)." alt="" coords="5,5,202,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,45,202,43,202,38,237,44"/>
+<area shape="rect" id="Node000003" href="$class_auth_reg_form.html#a5213207fa93ca3b9bda0fa149724176e" title="Отправляет &quot;reg &lt;login&gt; &lt;password&gt;&quot;; обрабатывает SUCCESS и ALREADY_EXISTS (REQ&#45;REG&#45;1…5)." alt="" coords="16,72,191,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,76,192,84,191,79,237,75"/>
+</map>

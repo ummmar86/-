@@ -1,0 +1,5 @@
+<map id="AuthRegForm" name="AuthRegForm">
+<area shape="rect" id="Node000001" title="Стартовое окно: поля логина и пароля, кнопки Login и Register (UI&#45;1)." alt="" coords="5,123,187,299"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="66,5,127,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,87,99,123,94,122,96,92"/>
+</map>

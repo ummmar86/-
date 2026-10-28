@@ -1,0 +1,5 @@
+<map id="MyTcpClient::slotReadyRead" name="MyTcpClient::slotReadyRead">
+<area shape="rect" id="Node000001" title="Читает данные из сокета и испускает messageReceived()." alt="" coords="5,5,212,31"/>
+<area shape="rect" id="Node000002" href="$classMyTcpClient.html#a12631b6462345a3753c383e7cbe6e1de" title="Получено сообщение от сервера (для асинхронного режима)." alt="" coords="260,5,488,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,15,246,15,246,21,212,21"/>
+</map>

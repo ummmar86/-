@@ -1,0 +1,9 @@
+<map id="Database" name="Database">
+<area shape="rect" id="Node000001" title="Доступ к базе данных mathserver.db (паттерн «Одиночка»)." alt="" coords="23,120,163,365"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="165,214,183,223,190,242,187,255,180,264,176,261,182,253,185,243,179,227,162,219"/>
+<area shape="rect" id="Node000003" href="$classDatabaseDestroyer.html" title="Вспомогательный класс, который удаляет синглтон Database при завершении программы." alt="" coords="5,428,181,513"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="39,366,40,385,44,403,48,413,43,415,39,405,34,385,34,366"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="60,5,127,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,84,96,120,91,120,91,84"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="104,427,109,404,111,382,117,382,115,404,110,428"/>
+</map>

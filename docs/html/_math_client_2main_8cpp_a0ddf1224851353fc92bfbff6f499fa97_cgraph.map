@@ -1,0 +1,16 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,55,107"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_client.html#a143ec9ab83b5359f6b9a59724e73a4eb" title="Возвращает единственный экземпляр, создавая его (и подключение) при первом вызове." alt="" coords="103,43,273,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,85,116,71,113,76,56,90"/>
+<area shape="rect" id="Node000007" href="$_math_server_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="163,117,212,144"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="56,96,150,119,147,124,55,102"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_client_destroyer.html#aebda830286d0c82f769384d376f45591" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="333,5,484,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,42,320,38,315,39,274,47"/>
+<area shape="rect" id="Node000004" href="$class_my_tcp_client.html#a7cb5a6586428ba70b9bdc69f87692a34" title="Создаёт сокет и подключается к серверу." alt="" coords="321,72,496,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="273,65,308,71,303,72,274,70"/>
+<area shape="rect" id="Node000005" href="$class_my_tcp_client.html#a7355dce00c2abc6725ef543fb9677b2d" title="Соединение с сервером установлено." alt="" coords="553,47,715,73"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="496,73,540,71,535,71,497,78"/>
+<area shape="rect" id="Node000006" href="$class_my_tcp_client.html#a6185dc550090b6526943673d28a71454" title="Соединение с сервером разорвано." alt="" coords="544,97,724,124"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="497,93,532,99,526,99,497,98"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="160,116,156,109,159,99,170,93,188,91,207,93,218,102,213,102,205,98,188,96,172,98,163,103,161,108,165,118"/>
+</map>

@@ -1,0 +1,37 @@
+%%{init: {'theme': 'base', 'gitGraph': {'mainBranchName': 'main', 'showCommitLabel': true, 'rotateCommitLabel': false}, 'themeVariables': {'fontFamily': 'DejaVu Sans', 'fontSize': '14px', 'git0': '#2E6DB4', 'git1': '#E07B00', 'git2': '#2E9E5B', 'git3': '#8E44AD', 'git4': '#C0392B', 'git5': '#16A085', 'git6': '#7F8C8D', 'gitBranchLabel0': '#ffffff', 'gitBranchLabel1': '#ffffff', 'gitBranchLabel2': '#ffffff', 'gitBranchLabel3': '#ffffff', 'gitBranchLabel4': '#ffffff', 'gitBranchLabel5': '#ffffff', 'gitBranchLabel6': '#ffffff', 'commitLabelFontSize': '12px', 'commitLabelBackground': '#ffffff', 'commitLabelColor': '#222222', 'tagLabelFontSize': '12px'}}}%%
+gitGraph
+  commit id: "all files"
+  commit id: "xlsx"
+  commit id: "spec.docx"
+  branch develop
+  checkout develop
+  branch feature/docker
+  checkout feature/docker
+  commit id: "Dockerfile"
+  checkout develop
+  merge feature/docker id: "merge"
+  branch feature/docs
+  checkout feature/docs
+  commit id: "Doxygen, UML"
+  checkout develop
+  merge feature/docs id: "merge "
+  branch feature/tests
+  checkout feature/tests
+  commit id: "тесты"
+  checkout develop
+  merge feature/tests id: "merge  "
+  checkout main
+  merge develop id: "release" tag: "v1.0"
+  checkout develop
+  branch feature/server
+  checkout feature/server
+  commit id: "fix auth"
+  checkout develop
+  merge feature/server id: "merge   "
+  branch feature/client
+  checkout feature/client
+  commit id: "fix input"
+  checkout develop
+  merge feature/client id: "merge    "
+  checkout main
+  merge develop id: "release " tag: "v1.1"

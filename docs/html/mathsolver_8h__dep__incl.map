@@ -1,0 +1,16 @@
+<map id="MathServer/mathsolver.h" name="MathServer/mathsolver.h">
+<area shape="rect" id="Node000001" title="Численные методы поиска корней нелинейных уравнений (сервер)." alt="" coords="106,5,273,32"/>
+<area shape="rect" id="Node000002" href="$mathsolver_8cpp.html" title=" " alt="" coords="5,80,187,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,44,114,82,110,78,163,40"/>
+<area shape="rect" id="Node000003" href="$parsing_8h.html" title="Разбор текстовых команд клиента на сервере." alt="" coords="211,80,357,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,39,270,79,265,80,218,44"/>
+<area shape="rect" id="Node000004" href="$mytcpserver_8cpp.html" title=" " alt="" coords="64,229,253,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,112,210,133,186,156,176,174,169,194,162,230,157,227,163,193,171,172,182,153,207,129,235,115"/>
+<area shape="rect" id="Node000005" href="$mytcpserver_8h.html" title="TCP&#45;сервер MathServer." alt="" coords="196,155,372,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="286,120,286,156,282,153,282,125"/>
+<area shape="rect" id="Node000007" href="$parsing_8cpp.html" title=" " alt="" coords="396,155,556,181"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="332,110,445,154,440,154,331,115"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="252,189,182,231,180,226,247,190"/>
+<area shape="rect" id="Node000006" href="$_math_server_2main_8cpp.html" title=" " alt="" coords="278,229,423,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="307,191,342,230,337,228,305,195"/>
+</map>

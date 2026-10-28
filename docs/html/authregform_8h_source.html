@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MathEquationSolver: Исходный файл MathClient/authregform.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MathEquationSolver<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Решение нелинейных уравнений: клиент-сервер на Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('authregform_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">authregform.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="authregform_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef AUTHREGFORM_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define AUTHREGFORM_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="mainform_8h.html">mainform.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespace_ui.html">   11</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="class_auth_reg_form.html">AuthRegForm</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Q_OBJECT</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">~AuthRegForm</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#af45f68e46fbb15a47c230705935ac141">on_loginButton_clicked</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#a5213207fa93ca3b9bda0fa149724176e">on_registerButton_clicked</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#a6fc7ae88cb3c37eb34ee2b6e30a21420">onMainFormClosed</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">   39</a></span>    Ui::AuthRegForm *<a class="code hl_variable" href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">ui</a>; </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#a89bac3fb50c990689b65fcfd4b30b480">   40</a></span>    <a class="code hl_class" href="class_main_form.html">MainForm</a> *<a class="code hl_variable" href="class_auth_reg_form.html#a89bac3fb50c990689b65fcfd4b30b480">mainForm</a>;  </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// AUTHREGFORM_H</span></div>
+<div class="ttc" id="aclass_auth_reg_form_html"><div class="ttname"><a href="class_auth_reg_form.html">AuthRegForm</a></div><div class="ttdoc">Стартовое окно: поля логина и пароля, кнопки Login и Register (UI-1).</div><div class="ttdef"><b>Определения</b> <a href="#l00021">authregform.h:22</a></div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a5213207fa93ca3b9bda0fa149724176e"><div class="ttname"><a href="class_auth_reg_form.html#a5213207fa93ca3b9bda0fa149724176e">AuthRegForm::on_registerButton_clicked</a></div><div class="ttdeci">void on_registerButton_clicked()</div><div class="ttdoc">Отправляет &quot;reg &lt;login&gt; &lt;password&gt;&quot;; обрабатывает SUCCESS и ALREADY_EXISTS (REQ-REG-1…5).</div><div class="ttdef"><b>Определения</b> <a href="authregform_8cpp_source.html#l00041">authregform.cpp:41</a></div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a6fc7ae88cb3c37eb34ee2b6e30a21420"><div class="ttname"><a href="class_auth_reg_form.html#a6fc7ae88cb3c37eb34ee2b6e30a21420">AuthRegForm::onMainFormClosed</a></div><div class="ttdeci">void onMainFormClosed()</div><div class="ttdoc">Вызывается по сигналу MainForm::logout(): скрывает MainForm и показывает окно входа (UI-3).</div><div class="ttdef"><b>Определения</b> <a href="authregform_8cpp_source.html#l00063">authregform.cpp:63</a></div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a7ec2ba2a7980453c629e141a90602e68"><div class="ttname"><a href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm::AuthRegForm</a></div><div class="ttdeci">AuthRegForm(QWidget *parent=nullptr)</div><div class="ttdoc">Создаёт форму и главное окно MainForm (пока скрытое).</div><div class="ttdef"><b>Определения</b> <a href="authregform_8cpp_source.html#l00007">authregform.cpp:7</a></div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a89bac3fb50c990689b65fcfd4b30b480"><div class="ttname"><a href="class_auth_reg_form.html#a89bac3fb50c990689b65fcfd4b30b480">AuthRegForm::mainForm</a></div><div class="ttdeci">MainForm * mainForm</div><div class="ttdoc">Главное окно вычислений.</div><div class="ttdef"><b>Определения</b> <a href="#l00040">authregform.h:40</a></div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_abc34a5cc090ed5359af9de44c551ac0a"><div class="ttname"><a href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">AuthRegForm::ui</a></div><div class="ttdeci">Ui::AuthRegForm * ui</div><div class="ttdoc">Элементы формы из authregform.ui.</div><div class="ttdef"><b>Определения</b> <a href="#l00039">authregform.h:39</a></div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_af45f68e46fbb15a47c230705935ac141"><div class="ttname"><a href="class_auth_reg_form.html#af45f68e46fbb15a47c230705935ac141">AuthRegForm::on_loginButton_clicked</a></div><div class="ttdeci">void on_loginButton_clicked()</div><div class="ttdoc">Отправляет &quot;auth &lt;login&gt; &lt;password&gt;&quot;; при SUCCESS открывает MainForm (REQ-AUTH-1, 2).</div><div class="ttdef"><b>Определения</b> <a href="authregform_8cpp_source.html#l00022">authregform.cpp:22</a></div></div>
+<div class="ttc" id="aclass_main_form_html"><div class="ttname"><a href="class_main_form.html">MainForm</a></div><div class="ttdoc">Окно вычислений (UI-2).</div><div class="ttdef"><b>Определения</b> <a href="mainform_8h_source.html#l00020">mainform.h:21</a></div></div>
+<div class="ttc" id="amainform_8h_html"><div class="ttname"><a href="mainform_8h.html">mainform.h</a></div><div class="ttdoc">Главное окно клиента: выбор уравнения, ввод параметров, результаты.</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Определения</b> <a href="#l00011">authregform.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_faba761e6863ae82541675b50672ff35.html">MathClient</a></li><li class="navelem"><a href="authregform_8h.html">authregform.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

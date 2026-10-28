@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MathEquationSolver: Класс MathSolver</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MathEquationSolver<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Решение нелинейных уравнений: клиент-сервер на Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_math_solver.html','','class_math_solver-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс MathSolver</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Математическое ядро сервера: метод половинного деления и метод Ньютона.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mathsolver_8h_source.html">mathsolver.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса MathSolver:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_math_solver__coll__graph.svg" width="146" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a903238298602b76aa28a5a01eacf5070" id="r_a903238298602b76aa28a5a01eacf5070"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a903238298602b76aa28a5a01eacf5070">solveBisection</a> (std::function&lt; double(double)&gt; f, double a, double b, double eps, bool &amp;success)</td></tr>
+<tr class="memdesc:a903238298602b76aa28a5a01eacf5070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит корень методом половинного деления (дихотомии).  <br /></td></tr>
+<tr class="memitem:a60eb639e12474ce6ff86d22549ac33f7" id="r_a60eb639e12474ce6ff86d22549ac33f7"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a60eb639e12474ce6ff86d22549ac33f7">solveNewton</a> (std::function&lt; double(double)&gt; f, std::function&lt; double(double)&gt; df, double x0, double eps, bool &amp;success, int maxIter=1000)</td></tr>
+<tr class="memdesc:a60eb639e12474ce6ff86d22549ac33f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит корень методом Ньютона (касательных): x_{n+1} = x_n - f(x_n)/f'(x_n).  <br /></td></tr>
+<tr class="memitem:a003dad97b7ebeacf6150aa10863909b8" id="r_a003dad97b7ebeacf6150aa10863909b8"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a003dad97b7ebeacf6150aa10863909b8">newtonStep</a> (std::function&lt; double(double)&gt; f, double x0, double dfx0, bool &amp;success)</td></tr>
+<tr class="memdesc:a003dad97b7ebeacf6150aa10863909b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Один шаг метода Ньютона: x1 = x0 - f(x0) / f'(x0).  <br /></td></tr>
+<tr class="memitem:a3b335a663cdaca3e2d902bd429a95ce5" id="r_a3b335a663cdaca3e2d902bd429a95ce5"><td class="memItemLeft">static std::function&lt; double(double)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3b335a663cdaca3e2d902bd429a95ce5">getFunction</a> (int id)</td></tr>
+<tr class="memdesc:a3b335a663cdaca3e2d902bd429a95ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает уравнение по его идентификатору.  <br /></td></tr>
+<tr class="memitem:aa4615483883a0423294660612afe89d6" id="r_aa4615483883a0423294660612afe89d6"><td class="memItemLeft">static std::function&lt; double(double)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa4615483883a0423294660612afe89d6">getDerivative</a> (int id)</td></tr>
+<tr class="memdesc:aa4615483883a0423294660612afe89d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает производную уравнения по его идентификатору.  <br /></td></tr>
+<tr class="memitem:a4d66fcf774a6707ae969b0c4ebeee824" id="r_a4d66fcf774a6707ae969b0c4ebeee824"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#a4d66fcf774a6707ae969b0c4ebeee824">getFunctionName</a> (int id)</td></tr>
+<tr class="memdesc:a4d66fcf774a6707ae969b0c4ebeee824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текстовую запись уравнения.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Математическое ядро сервера: метод половинного деления и метод Ньютона. </p>
+<p>Все методы статические, объект класса создавать не нужно. Поддерживаемые уравнения (REQ-MATH-1): </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">funcId  </th><th class="markdownTableHeadNone">Уравнение  </th><th class="markdownTableHeadNone">Производная  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">x^2 - 4  </td><td class="markdownTableBodyNone">2x  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">sin(x) - x/2  </td><td class="markdownTableBodyNone">cos(x) - 1/2  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">e^x - 2  </td><td class="markdownTableBodyNone">e^x  </td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8h_source.html">mathsolver.h</a> строка <a class="el" href="mathsolver_8h_source.html#l00022">22</a></p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aa4615483883a0423294660612afe89d6" name="aa4615483883a0423294660612afe89d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4615483883a0423294660612afe89d6">&#9670;&#160;</a></span>getDerivative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; double(double)&gt; MathSolver::getDerivative </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает производную уравнения по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор уравнения (0, 1 или 2). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Производная f'(x); для неизвестного id — константа 1. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a> строка <a class="el" href="mathsolver_8cpp_source.html#l00066">66</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_math_solver_aa4615483883a0423294660612afe89d6_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3b335a663cdaca3e2d902bd429a95ce5" name="a3b335a663cdaca3e2d902bd429a95ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b335a663cdaca3e2d902bd429a95ce5">&#9670;&#160;</a></span>getFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; double(double)&gt; MathSolver::getFunction </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает уравнение по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор уравнения (0, 1 или 2). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Функция f(x).</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Ошибка</a></b></dt><dd>Дефект №8: для неизвестного id молча возвращается f(x) = x, сервер отвечает "0.000000|0.000000" вместо FAILED. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a> строка <a class="el" href="mathsolver_8cpp_source.html#l00057">57</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_math_solver_a3b335a663cdaca3e2d902bd429a95ce5_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4d66fcf774a6707ae969b0c4ebeee824" name="a4d66fcf774a6707ae969b0c4ebeee824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d66fcf774a6707ae969b0c4ebeee824">&#9670;&#160;</a></span>getFunctionName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MathSolver::getFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает текстовую запись уравнения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор уравнения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка вида "f(x) = x^2 - 4" или "Unknown". </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a> строка <a class="el" href="mathsolver_8cpp_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a id="a003dad97b7ebeacf6150aa10863909b8" name="a003dad97b7ebeacf6150aa10863909b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003dad97b7ebeacf6150aa10863909b8">&#9670;&#160;</a></span>newtonStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MathSolver::newtonStep </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; double(double)&gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dfx0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Один шаг метода Ньютона: x1 = x0 - f(x0) / f'(x0). </p>
+<p>Дано: функция, начальное приближение x0 и значение производной f'(x0). Найти: следующее приближение x1.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">f</td><td>Функция. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">x0</td><td>Начальное приближение. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">dfx0</td><td>Значение производной в точке x0. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">success</td><td>false, если |f'(x0)| &lt; 1e-12 (делить на ноль нельзя). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Следующее приближение x1 (0, если <code class="param">success</code> == false). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a> строка <a class="el" href="mathsolver_8cpp_source.html#l00048">48</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_math_solver_a003dad97b7ebeacf6150aa10863909b8_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a903238298602b76aa28a5a01eacf5070" name="a903238298602b76aa28a5a01eacf5070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903238298602b76aa28a5a01eacf5070">&#9670;&#160;</a></span>solveBisection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MathSolver::solveBisection </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; double(double)&gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находит корень методом половинного деления (дихотомии). </p>
+<p>Отрезок [a, b] делится пополам, пока его длина не станет меньше <code class="param">eps</code>. На концах отрезка функция должна иметь разные знаки (BR-4).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">f</td><td>Функция, корень которой ищется. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">a</td><td>Левая граница отрезка. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">b</td><td>Правая граница отрезка. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">eps</td><td>Требуемая точность (длина итогового отрезка). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">success</td><td>true — корень найден; false — f(a)·f(b) &gt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Приближённое значение корня (0, если <code class="param">success</code> == false).</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Ошибка</a></b></dt><dd><p class="startdd">Дефект №4: при a &gt; b цикл не выполняется ни разу и возвращается a как «корень» (например, для x^2-4 на [5, 0] возвращается 5). </p>
+<p class="enddd">Дефект №5: при eps &lt;= 0 возвращается число вместо статуса FAILED (требование ROB-1, BR-3). </p>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a> строка <a class="el" href="mathsolver_8cpp_source.html#l00005">5</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_math_solver_a903238298602b76aa28a5a01eacf5070_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a60eb639e12474ce6ff86d22549ac33f7" name="a60eb639e12474ce6ff86d22549ac33f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60eb639e12474ce6ff86d22549ac33f7">&#9670;&#160;</a></span>solveNewton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MathSolver::solveNewton </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; double(double)&gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; double(double)&gt;</td>          <td class="paramname"><span class="paramname"><em>df</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxIter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1000</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находит корень методом Ньютона (касательных): x_{n+1} = x_n - f(x_n)/f'(x_n). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">f</td><td>Функция. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">df</td><td>Производная функции. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">x0</td><td>Начальное приближение (сервер передаёт (a+b)/2, BR-5). </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">eps</td><td>Точность: итерации прекращаются, когда |x_{n+1} - x_n| &lt;= eps. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">success</td><td>true — метод сошёлся; false — производная близка к нулю (|f'(x)| &lt; 1e-12) или превышено число итераций. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">maxIter</td><td>Максимальное число итераций (по умолчанию 1000). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Приближённое значение корня. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a> строка <a class="el" href="mathsolver_8cpp_source.html#l00026">26</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_math_solver_a60eb639e12474ce6ff86d22549ac33f7_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>MathServer/<a class="el" href="mathsolver_8h_source.html">mathsolver.h</a></li>
+<li>MathServer/<a class="el" href="mathsolver_8cpp_source.html">mathsolver.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_math_solver.html">MathSolver</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

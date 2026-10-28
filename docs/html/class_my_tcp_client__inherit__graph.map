@@ -1,0 +1,5 @@
+<map id="MyTcpClient" name="MyTcpClient">
+<area shape="rect" id="Node000001" title="TCP&#45;соединение клиента с сервером 127.0.0.1:33333 (паттерн «Одиночка»)." alt="" coords="5,123,127,384"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="37,5,96,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,87,69,123,64,123,66,92"/>
+</map>

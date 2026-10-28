@@ -1,0 +1,35 @@
+<map id="MathServer/main.cpp" name="MathServer/main.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,5,242,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="40,80,163,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,35,126,70,122,67,159,30"/>
+<area shape="rect" id="Node000003" href="$mytcpserver_8h.html" title="TCP&#45;сервер MathServer." alt="" coords="187,80,291,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,30,219,68,214,69,182,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="123,304,192,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,108,83,132,40,146,18,157,9,175,10,195,18,214,33,233,75,267,121,295,116,297,72,272,29,236,14,217,5,196,4,174,14,153,38,141,81,127,188,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="29,155,119,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="209,109,118,150,115,146,212,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="143,155,236,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="232,105,209,143,205,140,229,109"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="260,155,317,181"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="248,105,274,142,269,142,247,110"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="341,155,430,181"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="265,105,349,147,344,148,264,110"/>
+<area shape="rect" id="Node000009" href="$parsing_8h.html" title="Разбор текстовых команд клиента на сервере." alt="" coords="454,155,528,181"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="283,105,442,151,437,153,283,110"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="459,181,336,232,196,299,194,294,334,227,453,183"/>
+<area shape="rect" id="Node000010" href="$database_8h.html" title="Работа с базой данных SQLite (пользователи и история вычислений)." alt="" coords="347,229,432,256"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="476,181,421,222,419,218,471,183"/>
+<area shape="rect" id="Node000014" href="$mathsolver_8h.html" title="Численные методы поиска корней нелинейных уравнений (сервер)." alt="" coords="543,229,639,256"/>
+<area shape="poly" id="edge15_Node000009_Node000014" title=" " alt="" coords="509,179,564,220,559,220,508,184"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="352,256,208,303,206,298,347,257"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="217,304,323,331"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="371,256,305,298,303,293,366,257"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="347,304,432,331"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="392,255,392,290,388,287,388,258"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="456,304,534,331"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="409,254,467,295,462,295,407,259"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="558,304,624,331"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="593,255,593,290,589,287,589,258"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="648,304,726,331"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="609,254,661,295,656,294,607,259"/>
+</map>

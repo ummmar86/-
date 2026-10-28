@@ -1,0 +1,19 @@
+<map id="CommandParsing::Command" name="CommandParsing::Command">
+<area shape="rect" id="Node000001" title="Выполняет одну команду клиента." alt="" coords="5,183,199,209"/>
+<area shape="rect" id="Node000002" href="$class_database.html#aca2bdb58d8d8afe2e4d14c82978ef68f" title="Проверяет пару логин/пароль." alt="" coords="264,5,410,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,181,162,114,201,75,245,42,259,37,255,40,248,46,204,79,166,118,114,184"/>
+<area shape="rect" id="Node000003" href="$class_math_solver.html#aa4615483883a0423294660612afe89d6" title="Возвращает производную уравнения по его идентификатору." alt="" coords="251,56,423,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,180,172,137,208,113,245,92,264,87,260,90,248,97,210,118,175,142,121,184"/>
+<area shape="rect" id="Node000004" href="$class_math_solver.html#a3b335a663cdaca3e2d902bd429a95ce5" title="Возвращает уравнение по его идентификатору." alt="" coords="255,107,418,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,180,246,143,273,137,268,139,247,148,142,184"/>
+<area shape="rect" id="Node000005" href="$class_math_solver.html#a003dad97b7ebeacf6150aa10863909b8" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0) / f&#39;(x0)." alt="" coords="255,157,419,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,183,241,180,236,183,200,188"/>
+<area shape="rect" id="Node000006" href="$class_database.html#a5c92f0341fe9a197f2dbe59900536ec3" title="Регистрирует нового пользователя." alt="" coords="259,208,415,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="199,204,246,210,241,212,200,209"/>
+<area shape="rect" id="Node000007" href="$class_database.html#ae42afd159be8e73d5e68f4d3bfa057a8" title="Сохраняет результат расчёта в таблицу History." alt="" coords="247,259,426,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="141,207,247,244,273,254,268,254,246,249,141,213"/>
+<area shape="rect" id="Node000008" href="$class_math_solver.html#a903238298602b76aa28a5a01eacf5070" title="Находит корень методом половинного деления (дихотомии)." alt="" coords="247,309,427,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="119,207,175,250,210,274,248,295,265,304,259,304,245,300,208,279,172,255,119,212"/>
+<area shape="rect" id="Node000009" href="$class_math_solver.html#a60eb639e12474ce6ff86d22549ac33f7" title="Находит корень методом Ньютона (касательных): x_{n+1} = x_n &#45; f(x_n)/f&#39;(x_n)." alt="" coords="251,360,422,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="113,207,166,274,204,313,248,346,260,354,254,353,245,350,201,317,162,278,111,212"/>
+</map>

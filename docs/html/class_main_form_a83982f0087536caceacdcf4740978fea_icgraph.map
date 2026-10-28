@@ -1,0 +1,11 @@
+<map id="MainForm::on_stepButton_clicked" name="MainForm::on_stepButton_clicked">
+<area shape="rect" id="Node000001" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0)/f&#39;(x0)." alt="" coords="415,80,586,123"/>
+<area shape="rect" id="Node000002" href="$class_main_form.html#a31ae0e919e1b1189d30c3743cb05bd6b" title="Пользователь нажал Logout." alt="" coords="245,88,367,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,101,367,104,367,99,402,101"/>
+<area shape="rect" id="Node000003" href="$class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68" title="Создаёт форму и главное окно MainForm (пока скрытое)." alt="" coords="5,29,197,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,83,196,71,156,59,156,54,197,65,249,83"/>
+<area shape="rect" id="Node000004" href="$class_main_form.html#a3cdcf515e141678e9123647745959a76" title="Испускает сигнал logout()." alt="" coords="10,80,192,123"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="227,110,192,113,192,108,232,110"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="135,15,124,10,101,8,80,10,68,15,65,20,71,29,66,29,60,21,64,11,78,5,101,3,125,5,140,14"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="207,90,247,93,242,93,207,95"/>
+</map>

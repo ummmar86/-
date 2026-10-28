@@ -1,0 +1,16 @@
+<map id="MathServer/database.h" name="MathServer/database.h">
+<area shape="rect" id="Node000001" title="Работа с базой данных SQLite (пользователи и история вычислений)." alt="" coords="103,5,259,32"/>
+<area shape="rect" id="Node000002" href="$database_8cpp.html" title=" " alt="" coords="5,80,176,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,44,108,81,104,78,155,40"/>
+<area shape="rect" id="Node000003" href="$parsing_8h.html" title="Разбор текстовых команд клиента на сервере." alt="" coords="199,80,344,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,39,259,79,254,80,208,44"/>
+<area shape="rect" id="Node000004" href="$mytcpserver_8cpp.html" title=" " alt="" coords="52,229,241,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,115,198,133,174,156,163,174,156,194,150,230,145,227,151,193,159,172,170,153,195,129,227,112"/>
+<area shape="rect" id="Node000005" href="$mytcpserver_8h.html" title="TCP&#45;сервер MathServer." alt="" coords="184,155,360,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="273,120,274,156,270,153,270,125"/>
+<area shape="rect" id="Node000007" href="$parsing_8cpp.html" title=" " alt="" coords="384,155,544,181"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="320,110,433,154,428,155,319,115"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="240,189,170,231,167,226,235,190"/>
+<area shape="rect" id="Node000006" href="$_math_server_2main_8cpp.html" title=" " alt="" coords="266,229,411,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="295,191,330,230,324,228,293,195"/>
+</map>

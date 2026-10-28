@@ -1,0 +1,20 @@
+<map id="MyTcpClient::sendMessage" name="MyTcpClient::sendMessage">
+<area shape="rect" id="Node000001" title="Отправляет команду серверу в кодировке UTF&#45;8." alt="" coords="659,113,843,140"/>
+<area shape="rect" id="Node000002" href="$class_auth_reg_form.html#af45f68e46fbb15a47c230705935ac141" title="Отправляет &quot;auth &lt;login&gt; &lt;password&gt;&quot;; при SUCCESS открывает MainForm (REQ&#45;AUTH&#45;1, 2)." alt="" coords="415,5,611,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="707,106,610,62,581,51,582,46,612,58,712,106"/>
+<area shape="rect" id="Node000003" href="$class_auth_reg_form.html#a5213207fa93ca3b9bda0fa149724176e" title="Отправляет &quot;reg &lt;login&gt; &lt;password&gt;&quot;; обрабатывает SUCCESS и ALREADY_EXISTS (REQ&#45;REG&#45;1…5)." alt="" coords="426,72,600,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="641,112,601,108,601,103,647,112"/>
+<area shape="rect" id="Node000004" href="$class_main_form.html#ad458c44ee15d4c4180a8cc1fc7e354ee" title="Отправляет &quot;solve &lt;funcId&gt; &lt;a&gt; &lt;b&gt; &lt;eps&gt;&quot; и показывает ответ &quot;x1|x2&quot; (REQ&#45;MATH&#45;2…7)." alt="" coords="424,139,602,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="641,142,603,150,602,145,646,141"/>
+<area shape="rect" id="Node000008" href="$class_main_form.html#a83982f0087536caceacdcf4740978fea" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0)/f&#39;(x0)." alt="" coords="428,205,599,248"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="712,147,612,196,582,207,581,202,610,191,707,148"/>
+<area shape="rect" id="Node000005" href="$class_main_form.html#a31ae0e919e1b1189d30c3743cb05bd6b" title="Пользователь нажал Logout." alt="" coords="245,180,367,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="406,177,368,186,367,181,412,176"/>
+<area shape="rect" id="Node000006" href="$class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68" title="Создаёт форму и главное окно MainForm (пока скрытое)." alt="" coords="5,121,197,148"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="244,175,196,163,156,151,156,146,197,157,249,174"/>
+<area shape="rect" id="Node000007" href="$class_main_form.html#a3cdcf515e141678e9123647745959a76" title="Испускает сигнал logout()." alt="" coords="10,172,192,215"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="227,202,192,205,192,200,232,202"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="135,107,124,102,101,100,80,102,68,107,65,112,71,121,66,121,60,113,64,103,78,97,101,95,125,97,140,105"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="207,182,247,185,242,185,207,187"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="410,211,368,206,368,201,415,211"/>
+</map>

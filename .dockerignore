@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Документация
+docs/
+*.md
+*.xlsx
+*.txt
+
+# Базы данных
+*.db
+*.sqlite
+
+# Сборочные артефакты
+moc_*
+ui_*.h
+*.o
+*.obj
+Makefile
+Makefile.*
+.qmake.stash
+build-*
+debug/
+release/
+
+# IDE
+.qtcreator/
+.qtc_clangd/
+*.user
+*.pro.user*
+.vscode/
+.idea/
+
+# Прочее
+*.log
+MyTasks/

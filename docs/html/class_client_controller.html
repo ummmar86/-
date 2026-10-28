@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MathEquationSolver: Класс ClientController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MathEquationSolver<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Решение нелинейных уравнений: клиент-сервер на Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_client_controller.html','','class_client_controller-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ClientController</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Логика клиента без интерфейса и сети (паттерн «Одиночка»).  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ClientController:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller__inherit__graph.svg" width="207" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф связей класса ClientController:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller__coll__graph.svg" width="292" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:adb91f0c985ca9a72a2fea035e54ae7ee" id="r_adb91f0c985ca9a72a2fea035e54ae7ee"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#adb91f0c985ca9a72a2fea035e54ae7ee">makeLoginCommand</a> (QString login, QString password)</td></tr>
+<tr class="memdesc:adb91f0c985ca9a72a2fea035e54ae7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда входа.  <br /></td></tr>
+<tr class="memitem:a74049e02a00378b07184357cb2434cb7" id="r_a74049e02a00378b07184357cb2434cb7"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a74049e02a00378b07184357cb2434cb7">makeRegisterCommand</a> (QString login, QString password)</td></tr>
+<tr class="memdesc:a74049e02a00378b07184357cb2434cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда регистрации.  <br /></td></tr>
+<tr class="memitem:a56a6edfed277764b31da6e38e8da2fbc" id="r_a56a6edfed277764b31da6e38e8da2fbc"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a56a6edfed277764b31da6e38e8da2fbc">makeSolveTaskCommand</a> (int functionId, double a, double b, double eps)</td></tr>
+<tr class="memdesc:a56a6edfed277764b31da6e38e8da2fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда решения уравнения.  <br /></td></tr>
+<tr class="memitem:a529fb42541027e68c35939788436d99b" id="r_a529fb42541027e68c35939788436d99b"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a529fb42541027e68c35939788436d99b">makeNewtonStepCommand</a> (int functionId, double x0, double dfx0)</td></tr>
+<tr class="memdesc:a529fb42541027e68c35939788436d99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда одного шага метода Ньютона с заданной производной.  <br /></td></tr>
+<tr class="memitem:a1b8a624316f661a44e78ac61b423d393" id="r_a1b8a624316f661a44e78ac61b423d393"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a1b8a624316f661a44e78ac61b423d393">makeNewtonStepCommand</a> (int functionId, double x0)</td></tr>
+<tr class="memdesc:a1b8a624316f661a44e78ac61b423d393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда одного шага метода Ньютона, производную считает сервер.  <br /></td></tr>
+<tr class="memitem:a56ae73d86689189ba961a7275346418c" id="r_a56ae73d86689189ba961a7275346418c"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a56ae73d86689189ba961a7275346418c">parseServerResponse</a> (QString response)</td></tr>
+<tr class="memdesc:a56ae73d86689189ba961a7275346418c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переводит ответ сервера в статус для формы.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:aa60aab2ff47519db6ad3a5e19036d919" id="r_aa60aab2ff47519db6ad3a5e19036d919"><td class="memItemLeft">static <a class="el" href="class_client_controller.html">ClientController</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aa60aab2ff47519db6ad3a5e19036d919">getInstance</a> ()</td></tr>
+<tr class="memdesc:aa60aab2ff47519db6ad3a5e19036d919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает единственный экземпляр, создавая его при первом вызове.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:ac28cc17dda067772d7ffe094943e0b9d" id="r_ac28cc17dda067772d7ffe094943e0b9d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac28cc17dda067772d7ffe094943e0b9d">ClientController</a> ()</td></tr>
+<tr class="memitem:aac3e2ae823dd7bb207a5d2294a4b5595" id="r_aac3e2ae823dd7bb207a5d2294a4b5595"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aac3e2ae823dd7bb207a5d2294a4b5595">ClientController</a> (const <a class="el" href="class_client_controller.html">ClientController</a> &amp;)</td></tr>
+<tr class="memitem:a771cdfa650521a3bdeb07acc09aab429" id="r_a771cdfa650521a3bdeb07acc09aab429"><td class="memItemLeft"><a class="el" href="class_client_controller.html">ClientController</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a771cdfa650521a3bdeb07acc09aab429">operator=</a> (<a class="el" href="class_client_controller.html">ClientController</a> &amp;)</td></tr>
+<tr class="memitem:a2cfbea3bc708f5ac44ea70e727eb463f" id="r_a2cfbea3bc708f5ac44ea70e727eb463f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2cfbea3bc708f5ac44ea70e727eb463f">~ClientController</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:ad5749caf508378a667e69f747912e25b" id="r_ad5749caf508378a667e69f747912e25b"><td class="memItemLeft">static <a class="el" href="class_client_controller.html">ClientController</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad5749caf508378a667e69f747912e25b">instance</a> = nullptr</td></tr>
+<tr class="memdesc:ad5749caf508378a667e69f747912e25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Единственный экземпляр.  <br /></td></tr>
+<tr class="memitem:a93a5e59ef8f096819e80432c656750b6" id="r_a93a5e59ef8f096819e80432c656750b6"><td class="memItemLeft">static <a class="el" href="class_client_controller_destroyer.html">ClientControllerDestroyer</a>&#160;</td><td class="memItemRight"><a class="el" href="#a93a5e59ef8f096819e80432c656750b6">destroyer</a></td></tr>
+<tr class="memdesc:a93a5e59ef8f096819e80432c656750b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет экземпляр при выходе.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a73753386b792921d39ab69f68f6ae47b" id="r_a73753386b792921d39ab69f68f6ae47b"><td class="memItemLeft">class&#160;</td><td class="memItemRight"><a class="el" href="#a73753386b792921d39ab69f68f6ae47b">ClientControllerDestroyer</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Логика клиента без интерфейса и сети (паттерн «Одиночка»). </p>
+<p>Собирает текстовые команды протокола и переводит ответы сервера в понятные формам статусы. Благодаря отделению от GUI класс покрыт unit-тестами. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00033">33</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ac28cc17dda067772d7ffe094943e0b9d" name="ac28cc17dda067772d7ffe094943e0b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28cc17dda067772d7ffe094943e0b9d">&#9670;&#160;</a></span>ClientController() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ClientController::ClientController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00041">41</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_ac28cc17dda067772d7ffe094943e0b9d_icgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aac3e2ae823dd7bb207a5d2294a4b5595" name="aac3e2ae823dd7bb207a5d2294a4b5595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3e2ae823dd7bb207a5d2294a4b5595">&#9670;&#160;</a></span>ClientController() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ClientController::ClientController </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_client_controller.html">ClientController</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_aac3e2ae823dd7bb207a5d2294a4b5595_cgraph.svg" width="366" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2cfbea3bc708f5ac44ea70e727eb463f" name="a2cfbea3bc708f5ac44ea70e727eb463f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cfbea3bc708f5ac44ea70e727eb463f">&#9670;&#160;</a></span>~ClientController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ClientController::~ClientController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aa60aab2ff47519db6ad3a5e19036d919" name="aa60aab2ff47519db6ad3a5e19036d919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60aab2ff47519db6ad3a5e19036d919">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client_controller.html">ClientController</a> * ClientController::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает единственный экземпляр, создавая его при первом вызове. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00051">51</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_aa60aab2ff47519db6ad3a5e19036d919_cgraph.svg" width="415" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_aa60aab2ff47519db6ad3a5e19036d919_icgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="adb91f0c985ca9a72a2fea035e54ae7ee" name="adb91f0c985ca9a72a2fea035e54ae7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb91f0c985ca9a72a2fea035e54ae7ee">&#9670;&#160;</a></span>makeLoginCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientController::makeLoginCommand </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда входа. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка "auth &lt;login&gt; &lt;password&gt;". </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a> строка <a class="el" href="clientcontroller_8cpp_source.html#l00008">8</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_adb91f0c985ca9a72a2fea035e54ae7ee_icgraph.svg" width="438" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1b8a624316f661a44e78ac61b423d393" name="a1b8a624316f661a44e78ac61b423d393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8a624316f661a44e78ac61b423d393">&#9670;&#160;</a></span>makeNewtonStepCommand() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientController::makeNewtonStepCommand </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>functionId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x0</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда одного шага метода Ньютона, производную считает сервер. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка "step &lt;functionId&gt; &lt;x0&gt;". </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a> строка <a class="el" href="clientcontroller_8cpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="a529fb42541027e68c35939788436d99b" name="a529fb42541027e68c35939788436d99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529fb42541027e68c35939788436d99b">&#9670;&#160;</a></span>makeNewtonStepCommand() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientController::makeNewtonStepCommand </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>functionId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dfx0</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда одного шага метода Ньютона с заданной производной. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functionId</td><td>Идентификатор уравнения (0, 1, 2). </td></tr>
+    <tr><td class="paramname">x0</td><td>Начальное приближение. </td></tr>
+    <tr><td class="paramname">dfx0</td><td>Значение производной f'(x0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка "step &lt;functionId&gt; &lt;x0&gt; &lt;dfx0&gt;". </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a> строка <a class="el" href="clientcontroller_8cpp_source.html#l00020">20</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_a529fb42541027e68c35939788436d99b_icgraph.svg" width="100%" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a74049e02a00378b07184357cb2434cb7" name="a74049e02a00378b07184357cb2434cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74049e02a00378b07184357cb2434cb7">&#9670;&#160;</a></span>makeRegisterCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientController::makeRegisterCommand </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда регистрации. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка "reg &lt;login&gt; &lt;password&gt;". </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a> строка <a class="el" href="clientcontroller_8cpp_source.html#l00012">12</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_a74049e02a00378b07184357cb2434cb7_icgraph.svg" width="434" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a56a6edfed277764b31da6e38e8da2fbc" name="a56a6edfed277764b31da6e38e8da2fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a6edfed277764b31da6e38e8da2fbc">&#9670;&#160;</a></span>makeSolveTaskCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientController::makeSolveTaskCommand </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>functionId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда решения уравнения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functionId</td><td>Идентификатор уравнения (0, 1, 2). </td></tr>
+    <tr><td class="paramname">a</td><td>Левая граница. </td></tr>
+    <tr><td class="paramname">b</td><td>Правая граница. </td></tr>
+    <tr><td class="paramname">eps</td><td>Точность. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка "solve &lt;functionId&gt; &lt;a&gt; &lt;b&gt; &lt;eps&gt;". </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a> строка <a class="el" href="clientcontroller_8cpp_source.html#l00016">16</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_a56a6edfed277764b31da6e38e8da2fbc_icgraph.svg" width="100%" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a771cdfa650521a3bdeb07acc09aab429" name="a771cdfa650521a3bdeb07acc09aab429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771cdfa650521a3bdeb07acc09aab429">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client_controller.html">ClientController</a> &amp; ClientController::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_client_controller.html">ClientController</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_a771cdfa650521a3bdeb07acc09aab429_cgraph.svg" width="387" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a56ae73d86689189ba961a7275346418c" name="a56ae73d86689189ba961a7275346418c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ae73d86689189ba961a7275346418c">&#9670;&#160;</a></span>parseServerResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientController::parseServerResponse </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>response</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переводит ответ сервера в статус для формы. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">response</td><td>Ответ сервера. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>"SUCCESS", "FAILED", "ALREADY_EXISTS" или исходная строка без изменений. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a> строка <a class="el" href="clientcontroller_8cpp_source.html#l00028">28</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_client_controller_a56ae73d86689189ba961a7275346418c_icgraph.svg" width="444" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Друзья класса и относящимся к классу обозначения</h2>
+<a id="a73753386b792921d39ab69f68f6ae47b" name="a73753386b792921d39ab69f68f6ae47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73753386b792921d39ab69f68f6ae47b">&#9670;&#160;</a></span>ClientControllerDestroyer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_client_controller_destroyer.html">ClientControllerDestroyer</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a93a5e59ef8f096819e80432c656750b6" name="a93a5e59ef8f096819e80432c656750b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a5e59ef8f096819e80432c656750b6">&#9670;&#160;</a></span>destroyer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client_controller_destroyer.html">ClientControllerDestroyer</a> ClientController::destroyer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляет экземпляр при выходе. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="ad5749caf508378a667e69f747912e25b" name="ad5749caf508378a667e69f747912e25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5749caf508378a667e69f747912e25b">&#9670;&#160;</a></span>instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client_controller.html">ClientController</a> * ClientController::instance = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Единственный экземпляр. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a> строка <a class="el" href="clientcontroller_8h_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>MathClient/<a class="el" href="clientcontroller_8h_source.html">clientcontroller.h</a></li>
+<li>MathClient/<a class="el" href="clientcontroller_8cpp_source.html">clientcontroller.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_client_controller.html">ClientController</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

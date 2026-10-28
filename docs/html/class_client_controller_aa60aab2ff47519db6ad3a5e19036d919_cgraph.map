@@ -1,0 +1,7 @@
+<map id="ClientController::getInstance" name="ClientController::getInstance">
+<area shape="rect" id="Node000001" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="5,47,193,73"/>
+<area shape="rect" id="Node000002" href="$class_client_controller.html#ac28cc17dda067772d7ffe094943e0b9d" title=" " alt="" coords="248,5,402,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,44,235,40,230,41,194,49"/>
+<area shape="rect" id="Node000003" href="$class_client_controller_destroyer.html#a5c347716bcaaa52fca6f7fb4de48fd0f" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="241,72,409,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,71,228,78,223,79,193,77"/>
+</map>

@@ -1,0 +1,38 @@
+<map id="MainForm::on_logoutButton_clicked" name="MainForm::on_logoutButton_clicked">
+<area shape="rect" id="Node000001" title="Испускает сигнал logout()." alt="" coords="5,156,187,199"/>
+<area shape="rect" id="Node000002" href="$class_main_form.html#a31ae0e919e1b1189d30c3743cb05bd6b" title="Пользователь нажал Logout." alt="" coords="235,164,357,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,184,221,185,216,187,188,189"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="232,170,203,171,202,166,237,168"/>
+<area shape="rect" id="Node000003" href="$class_main_form.html#ad458c44ee15d4c4180a8cc1fc7e354ee" title="Отправляет &quot;solve &lt;funcId&gt; &lt;a&gt; &lt;b&gt; &lt;eps&gt;&quot; и показывает ответ &quot;x1|x2&quot; (REQ&#45;MATH&#45;2…7)." alt="" coords="405,189,582,232"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="357,185,392,193,387,193,358,190"/>
+<area shape="rect" id="Node000015" href="$class_main_form.html#a83982f0087536caceacdcf4740978fea" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0)/f&#39;(x0)." alt="" coords="408,123,579,165"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="357,165,395,160,390,162,358,170"/>
+<area shape="rect" id="Node000004" href="$class_client_controller.html#aa60aab2ff47519db6ad3a5e19036d919" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="635,88,822,115"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="561,186,581,175,595,163,604,150,613,137,629,124,639,122,644,120,632,129,617,141,608,153,599,166,584,180,563,191"/>
+<area shape="rect" id="Node000007" href="$class_my_tcp_client.html#a143ec9ab83b5359f6b9a59724e73a4eb" title="Возвращает единственный экземпляр, создавая его (и подключение) при первом вызове." alt="" coords="643,139,814,165"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="581,186,655,170,660,169,582,191"/>
+<area shape="rect" id="Node000012" href="$class_my_tcp_client.html#ad7514081767c5f505184aa859e3d897c" title="Синхронно ждёт и читает ответ сервера." alt="" coords="656,189,801,216"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="582,205,643,205,638,206,583,210"/>
+<area shape="rect" id="Node000013" href="$class_client_controller.html#a56a6edfed277764b31da6e38e8da2fbc" title="Команда решения уравнения." alt="" coords="636,291,821,333"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="536,230,631,276,648,285,643,284,629,281,535,235"/>
+<area shape="rect" id="Node000014" href="$class_my_tcp_client.html#af8f66258fe73d002da2211d46cb72929" title="Отправляет команду серверу в кодировке UTF&#45;8." alt="" coords="637,240,820,267"/>
+<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="583,224,639,237,634,237,583,229"/>
+<area shape="rect" id="Node000005" href="$class_client_controller.html#ac28cc17dda067772d7ffe094943e0b9d" title=" " alt="" coords="886,5,1039,48"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="786,85,826,73,889,55,894,53,827,79,788,90"/>
+<area shape="rect" id="Node000006" href="$class_client_controller_destroyer.html#a5c347716bcaaa52fca6f7fb4de48fd0f" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="878,72,1046,115"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="822,95,865,96,860,97,823,101"/>
+<area shape="rect" id="Node000008" href="$class_my_tcp_client_destroyer.html#aebda830286d0c82f769384d376f45591" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="887,139,1038,181"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="814,152,874,157,869,157,814,158"/>
+<area shape="rect" id="Node000009" href="$class_my_tcp_client.html#a7cb5a6586428ba70b9bdc69f87692a34" title="Создаёт сокет и подключается к серверу." alt="" coords="875,205,1050,232"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="786,163,827,175,875,191,901,201,896,200,874,196,826,180,786,169"/>
+<area shape="rect" id="Node000010" href="$class_my_tcp_client.html#a7355dce00c2abc6725ef543fb9677b2d" title="Соединение с сервером установлено." alt="" coords="1106,180,1269,207"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1050,206,1094,204,1088,204,1051,211"/>
+<area shape="rect" id="Node000011" href="$class_my_tcp_client.html#a6185dc550090b6526943673d28a71454" title="Соединение с сервером разорвано." alt="" coords="1098,231,1277,257"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1050,226,1085,232,1080,232,1050,231"/>
+<area shape="poly" id="edge16_Node000015_Node000004" title=" " alt="" coords="579,126,639,117,634,119,580,131"/>
+<area shape="poly" id="edge17_Node000015_Node000007" title=" " alt="" coords="579,144,630,148,625,149,580,150"/>
+<area shape="poly" id="edge18_Node000015_Node000012" title=" " alt="" coords="580,163,660,185,655,185,579,168"/>
+<area shape="poly" id="edge20_Node000015_Node000014" title=" " alt="" coords="562,163,584,175,599,189,608,202,617,214,632,226,644,234,639,233,629,230,613,218,604,205,595,192,581,180,562,169"/>
+<area shape="rect" id="Node000016" href="$class_client_controller.html#a529fb42541027e68c35939788436d99b" title="Команда одного шага метода Ньютона с заданной производной." alt="" coords="630,21,827,64"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="534,120,629,74,648,69,643,71,631,78,536,124"/>
+</map>

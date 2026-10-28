@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,60,67"/>
+<area shape="rect" id="Node000002" href="$classMyTcpClient.html#a143ec9ab83b5359f6b9a59724e73a4eb" title="Возвращает единственный экземпляр, создавая его (и подключение) при первом вызове." alt="" coords="108,42,293,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,52,94,52,94,57,60,57"/>
+<area shape="rect" id="Node000003" href="$classMyTcpClientDestroyer.html#aebda830286d0c82f769384d376f45591" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="353,5,518,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,40,339,35,339,40,294,46"/>
+<area shape="rect" id="Node000004" href="$classMyTcpClient.html#a7cb5a6586428ba70b9bdc69f87692a34" title="Создаёт сокет и подключается к серверу." alt="" coords="341,70,529,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="294,63,328,67,327,72,293,68"/>
+<area shape="rect" id="Node000005" href="$classMyTcpClient.html#a7355dce00c2abc6725ef543fb9677b2d" title="Соединение с сервером установлено." alt="" coords="587,45,763,70"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="529,70,573,65,573,71,530,75"/>
+<area shape="rect" id="Node000006" href="$classMyTcpClient.html#a6185dc550090b6526943673d28a71454" title="Соединение с сервером разорвано." alt="" coords="577,94,772,119"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="530,89,564,93,564,98,529,95"/>
+</map>

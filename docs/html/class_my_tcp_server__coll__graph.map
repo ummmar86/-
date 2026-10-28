@@ -1,0 +1,15 @@
+<map id="MyTcpServer" name="MyTcpServer">
+<area shape="rect" id="Node000001" title="Принимает подключения клиентов на порту 33333 и отвечает на их команды." alt="" coords="5,620,172,796"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="100,5,158,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,86,110,252,95,457,91,620,86,620,90,457,105,252,123,92"/>
+<area shape="rect" id="Node000003" href="$class_command_parsing.html" title="Разбирает команду клиента, выполняет её и формирует ответ." alt="" coords="105,457,241,548"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="135,87,167,433,170,458,165,457,162,434,131,92"/>
+<area shape="rect" id="Node000004" href="$class_database.html" title="Доступ к базе данных mathserver.db (паттерн «Одиночка»)." alt="" coords="198,124,324,385"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="157,84,201,152,196,153,158,90"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,546,134,606,129,603,153,550"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="199,349,177,410,173,441,167,440,172,409,197,354"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="323,224,343,233,349,243,350,255,348,268,342,277,337,274,343,266,345,255,344,245,339,237,324,229"/>
+<area shape="rect" id="Node000005" href="$class_database_destroyer.html" title="Вспомогательный класс, который удаляет синглтон Database при завершении программы." alt="" coords="287,457,440,548"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="273,383,293,432,300,445,295,444,288,435,272,388"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="362,457,354,410,332,358,333,353,359,409,367,458"/>
+</map>

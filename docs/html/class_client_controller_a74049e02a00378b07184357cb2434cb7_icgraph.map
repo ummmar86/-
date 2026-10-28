@@ -1,0 +1,5 @@
+<map id="ClientController::makeRegisterCommand" name="ClientController::makeRegisterCommand">
+<area shape="rect" id="Node000001" title="Команда регистрации." alt="" coords="228,5,428,48"/>
+<area shape="rect" id="Node000002" href="$class_auth_reg_form.html#a5213207fa93ca3b9bda0fa149724176e" title="Отправляет &quot;reg &lt;login&gt; &lt;password&gt;&quot;; обрабатывает SUCCESS и ALREADY_EXISTS (REQ&#45;REG&#45;1…5)." alt="" coords="5,5,180,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,27,180,29,180,24,215,26"/>
+</map>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MathEquationSolver: Ошибки</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MathEquationSolver<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Решение нелинейных уравнений: клиент-сервер на Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('bug.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Ошибки </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="reflist">
+<dt>Член <a class="el" href="class_command_parsing.html#affec5eda00bdaa7821c65e1c4d044cca">CommandParsing::Command</a>  (const QString &amp;command)</dt>
+<dd><p class="startdd"><a class="anchor" id="_bug000006"></a>Дефект №2: команда solve выполняется без авторизации (нарушение SEC-1, BR-2). </p>
+<p class="interdd"></p>
+<p class="enddd">Дефект №7: пароль с пробелом обрезается до первого слова.  </p>
+</dd>
+<dt>Член <a class="el" href="class_command_parsing.html#a7254079e8c449183b146e37aa9672819">CommandParsing::currentLogin</a>  </dt>
+<dd><a class="anchor" id="_bug000005"></a>Дефект №3: поле одно на весь сервер, а не на каждое подключение. Если вошли несколько клиентов, все расчёты записываются под логином последнего вошедшего.  </dd>
+<dt>Член <a class="el" href="class_database.html#a5c92f0341fe9a197f2dbe59900536ec3">Database::registerUser</a>  (const QString &amp;login, const QString &amp;password)</dt>
+<dd><a class="anchor" id="_bug000001"></a>Дефект №6: пустой логин не отклоняется и успешно регистрируется.  </dd>
+<dt>Член <a class="el" href="class_database.html#ae42afd159be8e73d5e68f4d3bfa057a8">Database::saveTaskResult</a>  (const QString &amp;login, int functionId, double a, double b, double eps, double bisectionResult, double newtonResult)</dt>
+<dd><a class="anchor" id="_bug000002"></a>Дефект №11: если метод не сошёлся, в History пишется 0 вместо статуса FAILED, и неудачный расчёт неотличим от корня x = 0.  </dd>
+<dt>Член <a class="el" href="class_main_form.html#ad458c44ee15d4c4180a8cc1fc7e354ee">MainForm::on_solveButton_clicked</a>  ()</dt>
+<dd><a class="anchor" id="_bug000007"></a>Дефект №9: нечисловой ввод (например, "abc") без предупреждения превращается в 0, и считается не та задача, которую ввёл пользователь.  </dd>
+<dt>Член <a class="el" href="class_math_solver.html#a3b335a663cdaca3e2d902bd429a95ce5">MathSolver::getFunction</a>  (int id)</dt>
+<dd><a class="anchor" id="_bug000004"></a>Дефект №8: для неизвестного id молча возвращается f(x) = x, сервер отвечает "0.000000|0.000000" вместо FAILED.  </dd>
+<dt>Член <a class="el" href="class_math_solver.html#a903238298602b76aa28a5a01eacf5070">MathSolver::solveBisection</a>  (std::function&lt; double(double)&gt; f, double a, double b, double eps, bool &amp;success)</dt>
+<dd><p class="startdd"><a class="anchor" id="_bug000003"></a>Дефект №4: при a &gt; b цикл не выполняется ни разу и возвращается a как «корень» (например, для x^2-4 на [5, 0] возвращается 5). </p>
+<p class="interdd"></p>
+<p class="enddd">Дефект №5: при eps &lt;= 0 возвращается число вместо статуса FAILED (требование ROB-1, BR-3).  </p>
+</dd>
+<dt>Член <a class="el" href="class_my_tcp_client.html#a7cb5a6586428ba70b9bdc69f87692a34">MyTcpClient::MyTcpClient</a>  ()</dt>
+<dd><a class="anchor" id="_bug000008"></a>Дефект №10: подключение выполняется только здесь, один раз. Если сервер был недоступен при запуске клиента, клиент не переподключается, а форма показывает «Login failed» вместо сообщения об отсутствии связи. </dd>
+</dl>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

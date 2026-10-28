@@ -1,0 +1,11 @@
+<map id="MyTcpClient::getInstance" name="MyTcpClient::getInstance">
+<area shape="rect" id="Node000001" title="Возвращает единственный экземпляр, создавая его (и подключение) при первом вызове." alt="" coords="5,43,176,69"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_client_destroyer.html#aebda830286d0c82f769384d376f45591" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="236,5,387,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,42,223,38,218,40,177,47"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_client.html#a7cb5a6586428ba70b9bdc69f87692a34" title="Создаёт сокет и подключается к серверу." alt="" coords="224,72,399,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,65,211,71,206,72,176,70"/>
+<area shape="rect" id="Node000004" href="$class_my_tcp_client.html#a7355dce00c2abc6725ef543fb9677b2d" title="Соединение с сервером установлено." alt="" coords="456,47,618,73"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,73,443,71,437,71,400,78"/>
+<area shape="rect" id="Node000005" href="$class_my_tcp_client.html#a6185dc550090b6526943673d28a71454" title="Соединение с сервером разорвано." alt="" coords="447,97,626,124"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="399,93,434,99,429,99,399,98"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MainForm" name="MainForm">
+<area shape="rect" id="Node000001" title="Окно вычислений (UI&#45;2)." alt="" coords="5,123,179,277"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="62,5,123,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,87,95,123,90,122,92,92"/>
+</map>

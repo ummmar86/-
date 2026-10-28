@@ -1,0 +1,26 @@
+<map id="ClientController::ClientController" name="ClientController::ClientController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="895,105,1048,148"/>
+<area shape="rect" id="Node000002" href="$class_client_controller.html#aac3e2ae823dd7bb207a5d2294a4b5595" title=" " alt="" coords="676,47,830,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="877,102,830,91,830,86,883,102"/>
+<area shape="rect" id="Node000003" href="$class_client_controller.html#aa60aab2ff47519db6ad3a5e19036d919" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="659,113,847,140"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="877,127,847,129,847,124,882,126"/>
+<area shape="rect" id="Node000011" href="$class_client_controller.html#a771cdfa650521a3bdeb07acc09aab429" title=" " alt="" coords="666,164,840,191"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="883,147,814,166,813,161,877,148"/>
+<area shape="rect" id="Node000004" href="$class_auth_reg_form.html#af45f68e46fbb15a47c230705935ac141" title="Отправляет &quot;auth &lt;login&gt; &lt;password&gt;&quot;; при SUCCESS открывает MainForm (REQ&#45;AUTH&#45;1, 2)." alt="" coords="415,5,611,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="670,107,658,104,643,93,633,83,624,72,610,62,588,51,588,46,613,58,627,69,637,79,647,89,661,99,675,108"/>
+<area shape="rect" id="Node000005" href="$class_auth_reg_form.html#a5213207fa93ca3b9bda0fa149724176e" title="Отправляет &quot;reg &lt;login&gt; &lt;password&gt;&quot;; обрабатывает SUCCESS и ALREADY_EXISTS (REQ&#45;REG&#45;1…5)." alt="" coords="426,72,600,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="641,112,601,108,601,103,647,111"/>
+<area shape="rect" id="Node000006" href="$class_main_form.html#ad458c44ee15d4c4180a8cc1fc7e354ee" title="Отправляет &quot;solve &lt;funcId&gt; &lt;a&gt; &lt;b&gt; &lt;eps&gt;&quot; и показывает ответ &quot;x1|x2&quot; (REQ&#45;MATH&#45;2…7)." alt="" coords="424,139,602,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="641,142,603,150,602,145,647,141"/>
+<area shape="rect" id="Node000010" href="$class_main_form.html#a83982f0087536caceacdcf4740978fea" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0)/f&#39;(x0)." alt="" coords="428,205,599,248"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="675,145,661,154,647,164,637,174,627,185,613,196,588,207,587,202,610,191,624,181,633,171,643,160,658,150,670,147"/>
+<area shape="rect" id="Node000007" href="$class_main_form.html#a31ae0e919e1b1189d30c3743cb05bd6b" title="Пользователь нажал Logout." alt="" coords="245,180,367,207"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="406,177,368,186,367,181,412,176"/>
+<area shape="rect" id="Node000008" href="$class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68" title="Создаёт форму и главное окно MainForm (пока скрытое)." alt="" coords="5,121,197,148"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="244,175,196,163,156,151,156,146,197,157,249,174"/>
+<area shape="rect" id="Node000009" href="$class_main_form.html#a3cdcf515e141678e9123647745959a76" title="Испускает сигнал logout()." alt="" coords="10,172,192,215"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="227,202,192,205,192,200,232,202"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="135,107,124,102,101,100,80,102,68,107,65,112,71,121,66,121,60,113,64,103,78,97,101,95,125,97,140,105"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="207,182,247,185,242,185,207,187"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="410,211,368,206,368,201,415,211"/>
+</map>

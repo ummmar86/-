@@ -1,0 +1,15 @@
+<map id="MyTcpClientDestroyer::initialize" name="MyTcpClientDestroyer::initialize">
+<area shape="rect" id="Node000001" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="503,119,668,159"/>
+<area shape="rect" id="Node000002" href="$classMyTcpClient.html#a143ec9ab83b5359f6b9a59724e73a4eb" title="Возвращает единственный экземпляр, создавая его (и подключение) при первом вызове." alt="" coords="269,127,455,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,142,455,142,455,137,489,137"/>
+<area shape="rect" id="Node000003" href="$MathClient_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="86,5,141,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,120,283,82,220,46,179,32,140,24,142,19,180,27,222,41,286,77,337,116"/>
+<area shape="rect" id="Node000004" href="$classAuthRegForm.html#af45f68e46fbb15a47c230705935ac141" title="Отправляет &quot;auth &lt;login&gt; &lt;password&gt;&quot;; при SUCCESS открывает MainForm (REQ&#45;AUTH&#45;1, 2)." alt="" coords="5,55,221,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="298,126,191,98,193,93,299,121"/>
+<area shape="rect" id="Node000005" href="$classAuthRegForm.html#a5213207fa93ca3b9bda0fa149724176e" title="Отправляет &quot;reg &lt;login&gt; &lt;password&gt;&quot;; обрабатывает SUCCESS и ALREADY_EXISTS (REQ&#45;REG&#45;1…5)." alt="" coords="18,119,209,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="256,142,209,142,209,137,256,137"/>
+<area shape="rect" id="Node000006" href="$classMainForm.html#ad458c44ee15d4c4180a8cc1fc7e354ee" title="Отправляет &quot;solve &lt;funcId&gt; &lt;a&gt; &lt;b&gt; &lt;eps&gt;&quot; и показывает ответ &quot;x1|x2&quot; (REQ&#45;MATH&#45;2…7)." alt="" coords="15,183,211,223"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="299,158,193,186,191,181,298,153"/>
+<area shape="rect" id="Node000007" href="$classMainForm.html#a83982f0087536caceacdcf4740978fea" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0)/f&#39;(x0)." alt="" coords="19,247,208,287"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="337,163,286,201,223,238,193,250,191,245,220,233,283,196,333,159"/>
+</map>

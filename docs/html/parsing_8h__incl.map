@@ -1,0 +1,20 @@
+<map id="MathServer/parsing.h" name="MathServer/parsing.h">
+<area shape="rect" id="Node000001" title="Разбор текстовых команд клиента на сервере." alt="" coords="143,5,305,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,33,70,145,66,141,208,29"/>
+<area shape="rect" id="Node000003" href="$database_8h.html" title="Работа с базой данных SQLite (пользователи и история вычислений)." alt="" coords="177,79,271,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,31,227,65,221,65,221,31"/>
+<area shape="rect" id="Node000007" href="$mathsolver_8h.html" title="Численные методы поиска корней нелинейных уравнений (сервер)." alt="" coords="447,79,553,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="269,28,443,73,441,78,268,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="196,107,86,149,84,144,194,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,152,219,177"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="216,106,183,143,179,140,212,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="243,152,333,177"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="237,103,271,140,267,144,233,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="357,152,440,177"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="253,102,358,144,356,149,251,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="465,152,535,177"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="503,104,503,138,497,138,497,104"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="559,152,646,177"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="518,102,576,142,573,146,515,106"/>
+</map>

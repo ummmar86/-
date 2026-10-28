@@ -1,0 +1,25 @@
+<map id="MyTcpServer::slotNewConnection" name="MyTcpServer::slotNewConnection">
+<area shape="rect" id="Node000001" title="Принимает новые подключения и подписывается на их сигналы." alt="" coords="5,157,226,184"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_server.html#a3e040c49dbefd65b9a58ab662fc9f7a2" title="Освобождает сокет отключившегося клиента (ROB&#45;2)." alt="" coords="274,132,515,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,158,260,156,256,159,227,163"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_server.html#ab4a64d2eab985d723090963f5c8a2882" title="Читает команду клиента, выполняет её и отправляет ответ." alt="" coords="296,183,492,209"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,178,283,185,278,187,227,183"/>
+<area shape="rect" id="Node000004" href="$class_command_parsing.html#affec5eda00bdaa7821c65e1c4d044cca" title="Выполняет одну команду клиента." alt="" coords="563,183,756,209"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="493,193,550,195,545,197,494,199"/>
+<area shape="rect" id="Node000005" href="$class_database.html#aca2bdb58d8d8afe2e4d14c82978ef68f" title="Проверяет пару логин/пароль." alt="" coords="822,5,967,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="668,180,720,114,758,75,803,42,812,40,817,37,806,46,762,79,724,118,672,184"/>
+<area shape="rect" id="Node000006" href="$class_math_solver.html#aa4615483883a0423294660612afe89d6" title="Возвращает производную уравнения по его идентификатору." alt="" coords="808,56,981,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="675,180,729,137,765,113,803,92,817,89,822,87,806,97,768,118,733,142,678,185"/>
+<area shape="rect" id="Node000007" href="$class_math_solver.html#a3b335a663cdaca3e2d902bd429a95ce5" title="Возвращает уравнение по его идентификатору." alt="" coords="813,107,976,133"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="698,179,804,143,825,139,831,137,805,148,699,185"/>
+<area shape="rect" id="Node000008" href="$class_math_solver.html#a003dad97b7ebeacf6150aa10863909b8" title="Один шаг метода Ньютона: x1 = x0 &#45; f(x0) / f&#39;(x0)." alt="" coords="812,157,977,184"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="756,183,799,181,794,182,757,188"/>
+<area shape="rect" id="Node000009" href="$class_database.html#a5c92f0341fe9a197f2dbe59900536ec3" title="Регистрирует нового пользователя." alt="" coords="816,208,973,235"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="757,204,804,211,798,211,757,209"/>
+<area shape="rect" id="Node000010" href="$class_database.html#ae42afd159be8e73d5e68f4d3bfa057a8" title="Сохраняет результат расчёта в таблицу History." alt="" coords="805,259,984,285"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="699,207,805,244,831,254,825,254,804,249,698,213"/>
+<area shape="rect" id="Node000011" href="$class_math_solver.html#a903238298602b76aa28a5a01eacf5070" title="Находит корень методом половинного деления (дихотомии)." alt="" coords="804,309,985,336"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="677,207,733,250,768,274,806,295,822,304,817,303,803,300,765,279,729,255,676,212"/>
+<area shape="rect" id="Node000012" href="$class_math_solver.html#a60eb639e12474ce6ff86d22549ac33f7" title="Находит корень методом Ньютона (касательных): x_{n+1} = x_n &#45; f(x_n)/f&#39;(x_n)." alt="" coords="809,360,980,387"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="671,207,724,274,762,313,806,346,817,354,812,353,803,350,758,317,720,278,669,212"/>
+</map>

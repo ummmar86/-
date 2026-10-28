@@ -1,0 +1,7 @@
+<map id="Database::getInstance" name="Database::getInstance">
+<area shape="rect" id="Node000001" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="5,35,159,61"/>
+<area shape="rect" id="Node000002" href="$class_database.html#a4703c80e6969d33565ea340f768fdadf" title=" " alt="" coords="207,5,348,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,34,194,31,189,32,160,39"/>
+<area shape="rect" id="Node000003" href="$class_database_destroyer.html#ae0b3be6d8d66425c59eaf705a121a2af" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="207,56,349,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,57,194,64,189,65,159,62"/>
+</map>

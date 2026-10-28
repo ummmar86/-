@@ -1,0 +1,57 @@
+@startuml use_case
+title Диаграмма вариантов использования — MathEquationSolver
+
+skinparam defaultFontName DejaVu Sans
+skinparam shadowing false
+left to right direction
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #2E6DB4
+}
+skinparam rectangle {
+  BorderColor #555555
+  BackgroundColor #F7F9FC
+}
+skinparam actorStyle awesome
+
+actor "Пользователь\n(Студент)" as User
+actor "Разработчик\n(Преподаватель)" as Dev
+
+rectangle "MathEquationSolver (MathClient + MathServer)" {
+  usecase "Зарегистрироваться" as UC_Reg
+  usecase "Войти в систему" as UC_Auth
+  usecase "Решить нелинейное\nуравнение" as UC_Solve
+  usecase "Выбрать уравнение\nи задать a, b, eps" as UC_Params
+  usecase "Найти корень методом\nполовинного деления" as UC_Bisect
+  usecase "Найти корень\nметодом Ньютона" as UC_Newton
+  usecase "Сохранить расчёт\nв историю (History)" as UC_Save
+  usecase "Просмотреть результаты\nобоих методов" as UC_View
+  usecase "Выполнить шаг метода Ньютона\nx1 = x0 - f(x0)/f'(x0)" as UC_Step
+  usecase "Выйти из аккаунта\n(Logout)" as UC_Logout
+
+  usecase "Развернуть сервер\n(Docker)" as UC_Deploy
+  usecase "Просмотреть историю\nвычислений (MATH-RPT-1)" as UC_Hist
+  usecase "Запустить\nunit-тесты" as UC_Tests
+}
+
+User --> UC_Reg
+User --> UC_Auth
+User --> UC_Solve
+User --> UC_View
+User --> UC_Step
+User --> UC_Logout
+
+UC_Solve ..> UC_Params : <<include>>
+UC_Solve ..> UC_Bisect : <<include>>
+UC_Solve ..> UC_Newton : <<include>>
+UC_Solve ..> UC_Save : <<include>>
+
+Dev --> UC_Deploy
+Dev --> UC_Hist
+Dev --> UC_Tests
+
+note right of UC_Solve
+  Доступно только после
+  входа (SEC-1, BR-2)
+end note
+@enduml

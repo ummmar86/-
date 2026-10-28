@@ -1,0 +1,121 @@
+@startuml class_client
+title Диаграмма классов — клиент (MathClient)
+
+skinparam defaultFontName DejaVu Sans
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #2E6DB4
+  ArrowColor #333333
+}
+skinparam package {
+  BorderColor #999999
+  BackgroundColor #F7F9FC
+}
+skinparam note {
+  BackgroundColor #FFF8DC
+  BorderColor #C8B560
+}
+hide empty members
+
+package "Qt" #EEEEEE {
+  class QObject
+  class QWidget
+  class QTcpSocket
+}
+
+package "Формы (UI)" {
+  class AuthRegForm {
+    - ui : Ui::AuthRegForm*
+    - mainForm : MainForm*
+    --
+    + AuthRegForm(parent : QWidget* = nullptr)
+    + ~AuthRegForm()
+    .. private slots ..
+    - on_loginButton_clicked() : void
+    - on_registerButton_clicked() : void
+    - onMainFormClosed() : void
+  }
+
+  class MainForm {
+    - ui : Ui::MainForm*
+    --
+    + MainForm(parent : QWidget* = nullptr)
+    + ~MainForm()
+    .. signals ..
+    + logout() : void
+    .. private slots ..
+    - on_solveButton_clicked() : void
+    - on_stepButton_clicked() : void
+    - on_logoutButton_clicked() : void
+  }
+}
+
+class ClientController <<Singleton>> {
+  - {static} instance : ClientController*
+  - {static} destroyer : ClientControllerDestroyer
+  --
+  # ClientController()
+  + {static} getInstance() : ClientController*
+  + makeLoginCommand(login : QString, password : QString) : QString
+  + makeRegisterCommand(login : QString, password : QString) : QString
+  + makeSolveTaskCommand(functionId : int, a : double, b : double, eps : double) : QString
+  + makeNewtonStepCommand(functionId : int, x0 : double, dfx0 : double) : QString
+  + makeNewtonStepCommand(functionId : int, x0 : double) : QString
+  + parseServerResponse(response : QString) : QString
+}
+
+class ClientControllerDestroyer {
+  - instance : ClientController*
+  --
+  + ~ClientControllerDestroyer()
+  + initialize(p : ClientController*) : void
+}
+
+class MyTcpClient <<Singleton>> {
+  - msocket : QTcpSocket*
+  - {static} instance : MyTcpClient*
+  - {static} destroyer : MyTcpClientDestroyer
+  --
+  # MyTcpClient()
+  + {static} getInstance() : MyTcpClient*
+  + sendMessage(msg : QString) : void
+  + getMsg() : QString
+  .. signals ..
+  + connected() : void
+  + disconnected() : void
+  + messageReceived(msg : QString) : void
+  .. private slots ..
+  - slotReadyRead() : void
+}
+
+class MyTcpClientDestroyer {
+  - instance : MyTcpClient*
+  --
+  + ~MyTcpClientDestroyer()
+  + initialize(p : MyTcpClient*) : void
+}
+
+QWidget <|-- AuthRegForm
+QWidget <|-- MainForm
+QObject <|-- ClientController
+QObject <|-- MyTcpClient
+
+AuthRegForm *-- "1" MainForm : создаёт, показывает\nпосле входа
+MainForm ..> AuthRegForm : сигнал logout()
+AuthRegForm ..> ClientController : формирует команды
+MainForm ..> ClientController : формирует команды
+AuthRegForm ..> MyTcpClient : отправка / ответ
+MainForm ..> MyTcpClient : отправка / ответ
+MyTcpClient *-- "1" QTcpSocket : 127.0.0.1:33333
+ClientControllerDestroyer --> ClientController : удаляет при выходе
+MyTcpClientDestroyer --> MyTcpClient : удаляет при выходе
+
+note bottom of MyTcpClient
+  Подключение к серверу выполняется
+  один раз — в конструкторе.
+  getMsg() ждёт ответ синхронно
+  (waitForReadyRead).
+end note
+@enduml

@@ -1,0 +1,7 @@
+<map id="MainForm::MainForm" name="MainForm::MainForm">
+<area shape="rect" id="Node000001" title="Создаёт окно и заполняет список уравнений." alt="" coords="245,29,390,56"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="353,14,342,10,317,8,295,10,282,15,280,20,285,30,280,28,274,21,279,11,293,5,317,3,343,5,358,14"/>
+<area shape="rect" id="Node000002" href="$class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68" title="Создаёт форму и главное окно MainForm (пока скрытое)." alt="" coords="5,29,197,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,43,197,45,197,40,232,43"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="137,14,125,10,101,8,78,10,66,15,63,20,69,29,64,29,58,21,62,11,77,5,101,3,127,5,142,14"/>
+</map>

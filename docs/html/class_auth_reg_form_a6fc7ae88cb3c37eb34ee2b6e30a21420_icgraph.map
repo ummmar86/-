@@ -1,0 +1,6 @@
+<map id="AuthRegForm::onMainFormClosed" name="AuthRegForm::onMainFormClosed">
+<area shape="rect" id="Node000001" title="Вызывается по сигналу MainForm::logout(): скрывает MainForm и показывает окно входа (UI&#45;3)." alt="" coords="245,29,468,56"/>
+<area shape="rect" id="Node000002" href="$class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68" title="Создаёт форму и главное окно MainForm (пока скрытое)." alt="" coords="5,29,197,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,43,197,45,197,40,232,43"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="144,15,130,10,101,8,74,10,59,15,56,20,63,29,58,29,51,21,56,11,73,5,101,3,132,5,149,14"/>
+</map>

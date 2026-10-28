@@ -1,0 +1,5 @@
+<map id="CommandParsing" name="CommandParsing">
+<area shape="rect" id="Node000001" title="Разбирает команду клиента, выполняет её и формирует ответ." alt="" coords="5,119,159,224"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="49,5,115,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,85,85,118,79,118,79,85"/>
+</map>

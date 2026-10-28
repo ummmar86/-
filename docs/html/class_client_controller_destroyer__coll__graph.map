@@ -1,0 +1,9 @@
+<map id="ClientControllerDestroyer" name="ClientControllerDestroyer">
+<area shape="rect" id="Node000001" title="Удаляет синглтон ClientController при завершении программы." alt="" coords="5,5,192,96"/>
+<area shape="rect" id="Node000002" href="$class_client_controller.html" title="Логика клиента без интерфейса и сети (паттерн «Одиночка»)." alt="" coords="82,168,278,451"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="81,93,80,120,82,143,85,152,79,152,77,145,74,120,80,98"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,168,148,121,146,113,146,108,153,119,169,168"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="278,277,298,289,305,309,302,323,295,333,291,329,297,321,300,310,293,292,278,282"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="232,16,291,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,97,227,170,222,167,245,102"/>
+</map>

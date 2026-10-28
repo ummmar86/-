@@ -1,0 +1,5 @@
+<map id="MyTcpServer::slotNewConnection" name="MyTcpServer::slotNewConnection">
+<area shape="rect" id="Node000001" title="Принимает новые подключения и подписывается на их сигналы." alt="" coords="237,5,457,32"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4" title="Создаёт сервер и начинает слушать порт 33333 на всех интерфейсах." alt="" coords="5,5,189,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,19,189,21,189,16,224,19"/>
+</map>

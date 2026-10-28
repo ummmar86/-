@@ -1,0 +1,5 @@
+<map id="Database" name="Database">
+<area shape="rect" id="Node000001" title="Доступ к базе данных mathserver.db (паттерн «Одиночка»)." alt="" coords="5,123,131,427"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="39,5,98,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,87,71,123,66,123,68,92"/>
+</map>

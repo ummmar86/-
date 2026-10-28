@@ -1,0 +1,9 @@
+<map id="MyTcpClientDestroyer" name="MyTcpClientDestroyer">
+<area shape="rect" id="Node000001" title="Удаляет синглтон MyTcpClient при завершении программы." alt="" coords="5,5,175,96"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_client.html" title="TCP&#45;соединение клиента с сервером 127.0.0.1:33333 (паттерн «Одиночка»)." alt="" coords="107,168,229,387"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="69,93,67,120,70,143,82,171,99,199,94,200,77,174,64,145,62,120,68,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,168,136,121,134,113,134,108,141,119,156,168"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="228,248,248,257,253,266,255,277,253,290,246,299,242,295,248,288,250,277,248,268,244,261,228,253"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="220,16,278,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,97,209,170,204,167,230,101"/>
+</map>

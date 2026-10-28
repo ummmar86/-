@@ -1,0 +1,30 @@
+﻿# Build artifacts
+*.o
+*.obj
+moc_*
+ui_*.h
+Makefile
+.qmake.stash
+build-*/
+debug/
+release/
+
+# Databases
+*.db
+*.sqlite
+
+# IDE
+.qtcreator/
+.qtc_clangd/
+*.user
+*.pro.user*
+.vscode/
+.idea/
+
+# Temp
+*.log
+MyTasks/
+
+# Docs - оставляем только html для GitHub Pages
+docs/doxygen/
+docs/latex/

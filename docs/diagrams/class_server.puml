@@ -1,0 +1,110 @@
+@startuml class_server
+title Диаграмма классов — сервер (MathServer)
+
+skinparam defaultFontName DejaVu Sans
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #2E6DB4
+  ArrowColor #333333
+}
+skinparam package {
+  BorderColor #999999
+  BackgroundColor #F7F9FC
+}
+skinparam note {
+  BackgroundColor #FFF8DC
+  BorderColor #C8B560
+}
+hide empty members
+
+package "Qt" #EEEEEE {
+  class QObject
+  class QTcpServer
+  class QTcpSocket
+  class QSqlDatabase
+}
+
+class MyTcpServer {
+  - myparsing : CommandParsing*
+  - mTcpServer : QTcpServer*
+  - mSockets : QMap<qintptr, QTcpSocket*>
+  --
+  + MyTcpServer(parent : QObject* = nullptr)
+  + ~MyTcpServer()
+  .. slots ..
+  + slotNewConnection() : void
+  + slotClientDisconnected() : void
+  + slotServerRead() : void
+}
+
+class CommandParsing {
+  - my_database : Database*
+  - currentLogin : QString
+  --
+  + CommandParsing(parent : QObject* = nullptr)
+  + Command(command : const QString&) : QString
+}
+
+class Database <<Singleton>> {
+  - {static} instance : Database*
+  - {static} destroyer : DatabaseDestroyer
+  - db : QSqlDatabase
+  --
+  # Database()
+  # ~Database()
+  + {static} getInstance() : Database*
+  + openDatabase(path : const QString&) : void
+  + createTables() : void
+  + registerUser(login : const QString&, password : const QString&) : bool
+  + authoUser(login : const QString&, password : const QString&) : bool
+  + saveTaskResult(login : const QString&, functionId : int, a : double, b : double, eps : double, bisectionResult : double, newtonResult : double) : void
+}
+
+class DatabaseDestroyer {
+  - instance : Database*
+  --
+  + ~DatabaseDestroyer()
+  + initialize(p : Database*) : void
+}
+
+class MathSolver <<utility>> {
+  + {static} solveBisection(f : function<double(double)>, a : double, b : double, eps : double, success : bool&) : double
+  + {static} solveNewton(f : function<double(double)>, df : function<double(double)>, x0 : double, eps : double, success : bool&, maxIter : int = 1000) : double
+  + {static} newtonStep(f : function<double(double)>, x0 : double, dfx0 : double, success : bool&) : double
+  + {static} getFunction(id : int) : function<double(double)>
+  + {static} getDerivative(id : int) : function<double(double)>
+  + {static} getFunctionName(id : int) : QString
+}
+
+QObject <|-- MyTcpServer
+QObject <|-- CommandParsing
+QObject <|-- Database
+
+MyTcpServer *-- "1" QTcpServer : слушает порт 33333
+MyTcpServer o-- "0..*" QTcpSocket : подключённые клиенты
+MyTcpServer *-- "1" CommandParsing : разбор команд
+CommandParsing --> "1" Database : getInstance()
+CommandParsing ..> MathSolver : вызывает методы
+Database *-- "1" QSqlDatabase : mathserver.db
+DatabaseDestroyer --> Database : удаляет при выходе
+Database ..> DatabaseDestroyer : static destroyer
+
+note right of CommandParsing
+  Команды протокола:
+  reg [login] [password]
+  auth [login] [password]
+  solve [funcId] [a] [b] [eps]
+  step [funcId] [x0] ([f'(x0)])
+  Ответы: SUCCESS | FAILED |
+  ALREADY_EXISTS | "x1|x2"
+end note
+
+note bottom of MathSolver
+  Уравнения (funcId):
+  0: x^2 - 4
+  1: sin(x) - x/2
+  2: e^x - 2
+end note
+@enduml

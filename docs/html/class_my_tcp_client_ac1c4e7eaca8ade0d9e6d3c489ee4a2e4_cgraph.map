@@ -1,0 +1,9 @@
+<map id="MyTcpClient::operator=" name="MyTcpClient::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,163,57"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_client.html#a7cb5a6586428ba70b9bdc69f87692a34" title="Создаёт сокет и подключается к серверу." alt="" coords="211,31,386,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,41,198,44,192,44,163,47"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_client.html#a7355dce00c2abc6725ef543fb9677b2d" title="Соединение с сервером установлено." alt="" coords="442,5,605,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,31,430,29,424,30,387,37"/>
+<area shape="rect" id="Node000004" href="$class_my_tcp_client.html#a6185dc550090b6526943673d28a71454" title="Соединение с сервером разорвано." alt="" coords="434,56,613,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="386,51,421,58,416,57,386,57"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="CommandParsing::CommandParsing" name="CommandParsing::CommandParsing">
+<area shape="rect" id="Node000001" title="Открывает mathserver.db и создаёт таблицы." alt="" coords="5,55,264,80"/>
+<area shape="rect" id="Node000002" href="$classDatabase.html#a4cc313e7b3e6ca2653a1a1527413f19c" title="Создаёт таблицы Users и History, если их ещё нет." alt="" coords="318,5,493,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,52,321,31,322,36,205,57"/>
+<area shape="rect" id="Node000003" href="$classDatabase.html#ae5a1904f34c6a6c34d5ce932bd33dd19" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="321,55,489,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,65,308,65,308,70,264,70"/>
+<area shape="rect" id="Node000006" href="$classDatabase.html#a057f9c6a07bd7fc737bf012ef8a10d5f" title="Открывает (или создаёт) файл базы данных через драйвер QSQLITE." alt="" coords="312,104,499,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="205,77,322,99,321,104,205,83"/>
+<area shape="rect" id="Node000004" href="$classDatabase.html#a4703c80e6969d33565ea340f768fdadf" title=" " alt="" coords="547,25,702,51"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="489,53,534,47,534,53,490,59"/>
+<area shape="rect" id="Node000005" href="$classDatabaseDestroyer.html#ae0b3be6d8d66425c59eaf705a121a2af" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="547,75,703,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="490,75,533,81,533,86,489,81"/>
+</map>

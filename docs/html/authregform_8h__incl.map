@@ -1,0 +1,8 @@
+<map id="MathClient/authregform.h" name="MathClient/authregform.h">
+<area shape="rect" id="Node000001" title="Окно входа и регистрации (стартовое окно клиента)." alt="" coords="5,5,196,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="61,152,140,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,32,86,79,87,110,94,138,89,140,81,110,81,78,94,30"/>
+<area shape="rect" id="Node000003" href="$mainform_8h.html" title="Главное окно клиента: выбор уравнения, ввод параметров, результаты." alt="" coords="95,79,194,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,30,133,66,128,68,106,32"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="140,106,117,142,113,139,135,103"/>
+</map>

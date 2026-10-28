@@ -1,0 +1,7 @@
+<map id="DatabaseDestroyer::initialize" name="DatabaseDestroyer::initialize">
+<area shape="rect" id="Node000001" title="Запоминает экземпляр, который нужно будет удалить." alt="" coords="528,5,684,45"/>
+<area shape="rect" id="Node000002" href="$classDatabase.html#ae5a1904f34c6a6c34d5ce932bd33dd19" title="Возвращает единственный экземпляр, создавая его при первом вызове." alt="" coords="312,13,480,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="514,28,480,28,480,23,514,23"/>
+<area shape="rect" id="Node000003" href="$classCommandParsing.html#a534a09c388a104b059071f8298e4c646" title="Открывает mathserver.db и создаёт таблицы." alt="" coords="5,13,264,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,28,264,28,264,23,298,23"/>
+</map>

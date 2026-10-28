@@ -1,0 +1,11 @@
+<map id="Database::saveTaskResult" name="Database::saveTaskResult">
+<area shape="rect" id="Node000001" title="Сохраняет результат расчёта в таблицу History." alt="" coords="991,5,1170,32"/>
+<area shape="rect" id="Node000002" href="$class_command_parsing.html#affec5eda00bdaa7821c65e1c4d044cca" title="Выполняет одну команду клиента." alt="" coords="749,5,943,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="972,19,943,21,943,16,978,19"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_server.html#ab4a64d2eab985d723090963f5c8a2882" title="Читает команду клиента, выполняет её и отправляет ответ." alt="" coords="505,5,701,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="731,19,702,21,702,16,736,19"/>
+<area shape="rect" id="Node000004" href="$class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc" title="Принимает новые подключения и подписывается на их сигналы." alt="" coords="237,5,457,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="487,19,458,21,457,16,492,19"/>
+<area shape="rect" id="Node000005" href="$class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4" title="Создаёт сервер и начинает слушать порт 33333 на всех интерфейсах." alt="" coords="5,5,189,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="218,19,189,21,189,16,224,19"/>
+</map>
